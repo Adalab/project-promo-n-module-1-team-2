@@ -21,8 +21,27 @@
   --normal-font-size: 16px; /*para parrafos --borrar comentario*/
   --small-font-size: 14px;
 }
-
-/* Ana Sección Quiénes somos */
+/*Ana Sección Equipo */
+.team-general {
+  background-color: lightyellow;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#team-section {
+  margin-top: 15px;
+  font-family: var(--title-font);
+  font-size: 24px;
+  font-weight: 500px;
+  line-height: 1.88;
+  color: var(--primary-color-alt);
+}
+.text {
+  max-width: 650px;
+}
+/* Ana Sección Adalabers */
 
 .about-us {
   background-color: lightpink;
@@ -32,7 +51,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: CENTER;
+  align-items: center;
 }
 #who-we-are {
   margin-top: 15px;
@@ -65,6 +84,7 @@
   padding: 10px;
 }
 .text {
+  margin: 10px;
   font-family: var(--body-font);
   color: var(--text-color);
   line-height: 1.5;
