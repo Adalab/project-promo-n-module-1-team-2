@@ -24,28 +24,29 @@
 /*Ana Sección Equipo */
 .team-general {
   background-color: lightyellow;
-  padding: 15px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #team-section {
-  margin-top: 15px;
   font-family: var(--title-font);
-  font-size: 24px;
+  font-size: var(--h2-team-strength);
   font-weight: 500px;
   line-height: 1.88;
+  text-align: center;
   color: var(--primary-color-alt);
+  margin-top: 30px;
 }
-.text {
-  max-width: 650px;
+.text-team {
+  padding-top: 15px ;
 }
+
 /* Ana Sección Adalabers */
 
 .about-us {
   background-color: lightpink;
-  padding: 15px;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -54,21 +55,23 @@
   align-items: center;
 }
 #who-we-are {
-  margin-top: 15px;
+  margin-top: 30px;
   font-family: var(--title-font);
   font-size: 24px;
   font-weight: 500px;
   line-height: 1.88;
   color: var(--primary-color);
+  text-align: center;
 }
 .member {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0px 15px;
-  max-width: px;
-  height: px;
   justify-content: center;
+}
+
+.member-4 {
+  padding-bottom: 45px;
 }
 
 .profile-picture {
@@ -84,12 +87,11 @@
   padding: 10px;
 }
 .text {
-  margin: 10px;
+  margin: 0;
   font-family: var(--body-font);
   color: var(--text-color);
   line-height: 1.5;
 }
-
 .icons {
   display: flex;
   width: 124px;
@@ -107,21 +109,20 @@
 .team-strength {
   background-color: var(--text-copy);
   opacity: 60%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 45px;
 }
 .team-title {
-  font-family: var(--primary-color);
-  color: var(--text-color);
+  font-family: var(--title-font);
+  color: var(--primary-color);
   font-size: var(--h3-font-size);
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
 }
-
 .text {
   font-family: var(--body-font);
   color: var(--text-color);
@@ -137,14 +138,15 @@
   height: auto;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
+  padding-top: 30px;
 }
 .copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
   color: var(--grey-color);
+  padding-bottom: 20px ;
 }
 .footer-ul {
   width: 100vw;
@@ -167,3 +169,23 @@
   transform: scale(0.5);
   margin-left: 27px;
 }
+/* columna central */
+.page-wrapper {
+  margin:0 25px;
+}
+/* media queries section EQUIPO */
+@media screen and (min-width:768px) and (max-width:1200px) {
+  .page-wrapper {
+    margin:0 45px;
+  }
+  
+}
+@media screen and (min-width:1200px) {
+  .page-wrapper {
+    margin:0 auto;
+    max-width: 1120px;;
+  }
+  
+}
+
+
