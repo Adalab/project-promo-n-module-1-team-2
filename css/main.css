@@ -40,7 +40,7 @@
   margin-top: 30px;
 }
 .text-team {
-  padding-top: 15px ;
+  padding-top: 15px;
 }
 
 /* Ana Sección Adalabers */
@@ -146,7 +146,7 @@
   justify-content: center;
   align-items: center;
   color: var(--grey-color);
-  padding-bottom: 20px ;
+  padding-bottom: 20px;
 }
 .footer-ul {
   width: 100vw;
@@ -171,21 +171,17 @@
 }
 /* columna central */
 .page-wrapper {
-  margin:0 25px;
+  margin: 0 25px;
 }
 /* media queries section EQUIPO */
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .page-wrapper {
-    margin:0 45px;
+    margin: 0 45px;
   }
-  
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .page-wrapper {
-    margin:0 auto;
-    max-width: 1120px;;
+    margin: 0 auto;
+    max-width: 1120px;
   }
-  
 }
-
-
