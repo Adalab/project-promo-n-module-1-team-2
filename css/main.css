@@ -107,7 +107,7 @@ ul {
 .team-strength {
   background-color: var(--text-copy);
   opacity: 60%;
-  margin-top: 20px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,14 +131,13 @@ ul {
 
 /* css footer provisional */
 
-.footer {
-  background-color: VAR(--white-color);
+.footer-container {
+  background-color: var(--white-color);
   width: auto;
   height: auto;
-  font-family: VAR(--body-font);
-  font-size: VAR(--small-font-size);
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
 }
-
 .copy {
   display: flex;
   flex-direction: column;
@@ -147,13 +146,15 @@ ul {
   margin: 20px;
   color: var(--grey-color);
 }
+.footer-ul {
+  width: 100vw;
+}
 .footer-nav .footer-item {
   margin: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
+  align-items: center;
   color: var(--text-color);
   line-height: 1.15px;
   text-decoration: none;
