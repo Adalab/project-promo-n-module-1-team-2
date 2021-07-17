@@ -102,3 +102,67 @@ ul {
   font-size: 16px;
   color: var(--primary-color);
 }
+
+/* Css Fortalezas y footer provisionales Tania! */
+.team-strength {
+  background-color: var(--text-copy);
+  opacity: 60%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-title {
+  font-family: var(--primary-color);
+  color: var(--text-color);
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  text-align: center;
+}
+
+/* css footer provisional */
+
+.footer {
+  background-color: VAR(--white-color);
+  width: auto;
+  height: auto;
+  font-family: VAR(--body-font);
+  font-size: VAR(--small-font-size);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: var(--grey-color);
+}
+.footer-nav .footer-item {
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  color: var(--text-color);
+  line-height: 1.15px;
+  text-decoration: none;
+}
+.adalab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.5);
+  margin-left: 27px;
+}
