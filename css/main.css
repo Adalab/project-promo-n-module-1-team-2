@@ -1,24 +1,51 @@
 :root {
-    /*  Colores  */
-    --primary-color    : #099d8d;
-    --primary-color-alt: #14d9c4;
-    --white-color      : #fff;
-    --black-color      : #000;
-    --grey-color       : #f1f1f1;
-    --text-color       : #54585a;
-    --text-copy        : #b8b8b9;
-  
-    /*  Fuentes  */
-    --title-font: 'Rubik', sans-serif;
-    --body-font : 'Open Sans', sans-serif;
-  
-    /* Tamaños de fuentes */
-    --h1-font-size     : 16px;
-    --h2-team-strength : 24px; /*para titulo equipo --borrar comentario*/
-    --h2-about-us      : 20px; /*para titulo nombres-quienes somos --borrar comentario*/
-    --h3-font-size     : 22px;
-    --big-font-size    : 18px; /*para el lema --borrar comentario*/
-    --normal-font-size : 16px; /*para parrafos --borrar comentario*/
-    --small-font-size  : 14px;
+  /*  Colores  */
+  --primary-color: #099d8d;
+  --primary-color-alt: #14d9c4;
+  --white-color: #fff;
+  --black-color: #000;
+  --grey-color: #f1f1f1;
+  --text-color: #54585a;
+  --text-copy: #b8b8b9;
+
+  /*  Fuentes  */
+  --title-font: "Rubik", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+
+  /* Tamaños de fuentes */
+  --h1-font-size: 16px;
+  --h2-team-strength: 24px; /*para titulo equipo --borrar comentario*/
+  --h2-about-us: 20px; /*para titulo nombres-quienes somos --borrar comentario*/
+  --h3-font-size: 22px;
+  --big-font-size: 18px; /*para el lema --borrar comentario*/
+  --normal-font-size: 16px; /*para parrafos --borrar comentario*/
+  --small-font-size: 14px;
 }
-  
+
+/* Ana Sección Quiénes somos */
+
+.about-us {
+  background-color: bisque;
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.who-we-are {
+  font-family: var(--title-font);
+
+  font-size: 100px;
+}
+.member {
+  /* flex-basis: 
+  flex-grow:  */
+  display: flex;
+  flex-direction: column;
+  margin: 0 0px 0px 0px;
+  max-width: px;
+  height: px;
+  justify-content: center;
+}
