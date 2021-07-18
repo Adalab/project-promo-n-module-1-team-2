@@ -174,7 +174,7 @@
   margin:0 25px;
 }
 
-media queries section EQUIPO 
+/* media queries section EQUIPO  */
 @media screen and (min-width:768px) and (max-width:1200px) {
   .page-wrapper {
     margin:0 45px;
@@ -234,7 +234,6 @@ media queries section EQUIPO
 .hero-picture{
   width: 100vw;
 }
-
 
 .header-claim{
   display: flex;
