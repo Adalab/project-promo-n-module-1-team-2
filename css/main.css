@@ -160,12 +160,15 @@
   text-decoration: none;
 }
 .adalab {
+  height: 35vw;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
   transform: scale(0.5);
-  margin-left: 27px;
+  margin: -15px;
 }
 /* columna central */
 .page-wrapper {
