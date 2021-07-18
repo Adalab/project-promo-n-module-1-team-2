@@ -140,6 +140,9 @@
   font-family: var(--body-font);
   font-size: var(--small-font-size);
 }
+.footer-line {
+  border-top: 1px solid var(--text-copy);
+}
 .copy {
   display: flex;
   flex-direction: column;
