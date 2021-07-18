@@ -173,8 +173,9 @@
 .page-wrapper {
   margin: 0 25px;
 }
-/* media queries section EQUIPO */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+
+/* media queries section EQUIPO  */
+@media screen and (min-width:768px) and (max-width:1200px) {
   .page-wrapper {
     margin: 0 45px;
   }
@@ -185,3 +186,65 @@
     max-width: 1120px;
   }
 }
+/* CSS Header */
+
+.page-title{
+    background-color: var(--primary-color) ;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0.95;
+}
+  
+.header-title { 
+  font-size: var(--h1-font-size);
+  font-family: var(--title-font);
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.header-nav{
+  background-color: var(--primary-color-alt);
+  height: 45px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  opacity: 0.95;
+}
+
+.header-ul{
+  display:flex;
+  justify-content: space-between;
+}
+
+.header-item{
+  color: white;
+  font-family: var(--title-font);
+  font-size: var(--h1-font-size);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.hero-picture{
+  width: 100vw;
+}
+
+.header-claim{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 80px;
+  background-color: var(--white-color);
+  font-family: var(--title-font);
+  font-size: var(--h2-team-strength);
+  margin-left: 45px;
+  padding: 14px;
+} 
+
+  
+
