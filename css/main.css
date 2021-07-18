@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 46px ;
+  padding-top: 46px;
 }
 #team-section {
   font-family: var(--title-font);
@@ -162,15 +162,15 @@
   text-decoration: none;
 }
 .adalab {
-  height: 35vw;
+  width: 115.9px;
+  height: 45px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-  transform: scale(0.5);
-  margin: -15px;
+  margin: 30px 28.1 0 78px;
 }
 /* columna central */
 .page-wrapper {
@@ -178,7 +178,7 @@
 }
 
 /* media queries section EQUIPO  */
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .page-wrapper {
     margin: 0 45px;
   }
@@ -191,40 +191,40 @@
 }
 /* CSS Header */
 
-.page-title{
-    background-color: var(--primary-color) ;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    opacity: 0.95;
+.page-title {
+  background-color: var(--primary-color);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.95;
 }
-  
-.header-title { 
+
+.header-title {
   font-size: var(--h1-font-size);
   font-family: var(--title-font);
   color: var(--white-color);
   text-transform: uppercase;
 }
 
-.header-nav{
+.header-nav {
   background-color: var(--primary-color-alt);
   height: 45px;
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   opacity: 0.95;
   padding: 0;
 }
 
-.header-ul{
-  display:flex;
+.header-ul {
+  display: flex;
   flex-direction: row;
 }
 
-.header-item{
+.header-item {
   font-size: 15px;
   padding-right: 13px;
   color: white;
@@ -233,7 +233,7 @@
   text-decoration: none;
 }
 
-.hero-picture{
+.hero-picture {
   width: 100vw;
 }
 header {
@@ -251,8 +251,7 @@ header {
   right: 14px;
 }
 
-.header-claim{
-  
+.header-claim {
   /* width: 290px;
   height: 80px; */
   /* background-color: var(--white-color); */
@@ -262,7 +261,4 @@ header {
   line-height: 1.39;
   /* margin-left: 45px;
   padding: 14px; */
-} 
-
-  
-
+}
