@@ -1,3 +1,4 @@
+/* variables */
 :root {
   /*  Colores  */
   --primary-color: rgb(9, 157, 141);
@@ -14,57 +15,70 @@
 
   /* Tamaños de fuentes */
   --h1-font-size: 16px;
-  --h2-team-strength: 24px; /*para titulo equipo --borrar comentario*/
-  --h2-about-us: 20px; /*para titulo nombres-quienes somos --borrar comentario*/
+  --h2-team-strength: 24px; 
+  --h2-about-us: 20px;
   --h3-font-size: 22px;
-  --big-font-size: 18px; /*para el lema --borrar comentario*/
-  --normal-font-size: 16px; /*para parrafos --borrar comentario*/
+  --big-font-size: 18px;
+  --normal-font-size: 16px; 
   --small-font-size: 14px;
+}
+
+/* central column */
+.page-wrapper {
+  margin: 0 25px;
+}
+
+/* media queries section*/
+@media all and (min-width: 768px) {
+  .page-wrapper {
+    margin: 0 45px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .page-wrapper {
+    margin: 0 auto;
+    max-width: 1120px;
+  }
 }
 
 /*----------------------------------------*/
 
-/* CSS Header */
+/* Section Header */
 
 .fixed-menu {
   position: fixed;
   z-index: 999;
 }
-
 .page-title {
-  background-color: var(--primary-color);
-  height: 60px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 60px;
   opacity: 0.95;
+  background-color: var(--primary-color);
 }
-
 .header-title {
+  font-weight: 500;
+  text-transform: uppercase;
   font-size: var(--h1-font-size);
   font-family: var(--title-font);
-  font-weight: 500;
   color: var(--white-color);
-  text-transform: uppercase;
 }
-
 .header-nav {
-  background-color: var(--primary-color-alt);
-  height: 45px;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 45px;
   opacity: 0.95;
   padding: 0;
+  background-color: var(--primary-color-alt);
 }
-
 .header-ul {
   display: flex;
   flex-direction: row;
 }
-
 .header-item {
   font-size: 15px;
   padding-right: 13px;
@@ -82,52 +96,48 @@
   width: 100vw;
 }
 .hero-image-container {
+  height: 421px;
   background: url(../assets/images/descarga.jpeg) center;
   background-size: cover;
-  height: 421px;
 }
 .claim {
-  position: relative;
-  bottom: 40px;
-  height: 80px;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80px;
+  max-width: 450px;
+  position: relative;
+  bottom: 40px;
+  background-color: white;
   margin-left: 15px;
   margin-right: 15px;
-  max-width: 450px;
 }
-
 .header-claim {
-  /* width: 290px;
-  height: 80px; */
-  /* background-color: var(--white-color); */
-  font-family: var(--body-font);
-  font-size: var(--big-font-size);
   font-weight: 600px;
   line-height: 1.39;
-  /* margin-left: 45px;
-  padding: 14px; */
-
-  /*----------------------------------------*/
+  font-size: var(--big-font-size);
+  font-family: var(--body-font);
 }
-/*Ana Sección Equipo */
+
+/*----------------------------------------*/
+
+/* Section team */
+
 .team-general {
-  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 #team-section {
+  margin-top: 30px;
   font-family: var(--title-font);
   font-size: var(--h2-team-strength);
   font-weight: 500px;
   line-height: 1.88;
   text-align: center;
   color: var(--primary-color-alt);
-  margin-top: 30px;
 }
 .text-team {
   padding-top: 15px;
@@ -135,7 +145,7 @@
 
 /*----------------------------------------*/
 
-/* Ana Sección Adalabers */
+/* Section About Us */
 
 .about-us {
   display: flex;
@@ -146,14 +156,13 @@
   align-items: center;
 }
 #who-we-are {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: var(--title-font);
+  margin: 30px 0 30px;
   font-size: 24px;
   font-weight: 500px;
   line-height: 1.88;
-  color: var(--primary-color);
   text-align: center;
+  font-family: var(--title-font);
+  color: var(--primary-color);
 }
 .member {
   display: flex;
@@ -162,30 +171,31 @@
   justify-content: center;
   padding-bottom: 45px;
 }
-
 .profile-picture {
-  margin-bottom: 15px;
   width: 180px;
+  margin-bottom: 15px;
   border-radius: 4px;
   border: solid 5px rgba(0, 0, 0, 0.08);
 }
 .profile-title {
-  font-family: var(--body-font);
   font-size: 20px;
   padding: 10px;
+  font-family: var(--body-font);
 }
 .text {
   margin: 0;
+  line-height: 1.5;
+  text-align: center;
   font-family: var(--body-font);
   color: var(--text-color);
-  line-height: 1.5;
+  font-size: var(--normal-font-size);
 }
 .icons {
   display: flex;
-  width: 124px;
-  height: 30px;
   justify-content: center;
   align-items: center;
+  width: 124px;
+  height: 30px;
 }
 .fab,
 .fas {
@@ -193,50 +203,42 @@
   color: var(--primary-color);
 }
 
-/* Css Fortalezas y footer provisionales Tania! */
+/* Section Footer*/
+
 .diamond {
-  position: relative;
-  background-color: white;
   width: 30px;
   height: 30px;
-  transform: rotate(45deg);
+  position: relative;
   top: -15px;
+  background-color: white;
+  transform: rotate(45deg);
 }
 .team-strength {
-  background-color: rgba(184, 184, 185, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-bottom: 45px;
+  background-color: rgba(184, 184, 185, 0.2);
 }
 .team-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
   font-family: var(--title-font);
   color: var(--primary-color);
   font-size: var(--h3-font-size);
   text-align: center;
   line-height: 2.05;
-  margin-top: 30px;
-  margin-bottom: 15px;
   font-weight: 500;
 }
-.text {
-  font-family: var(--body-font);
-  color: var(--text-color);
-  font-size: var(--normal-font-size);
-  text-align: center;
-}
-
-/* css footer provisional */
-
 .footer-container {
-  background-color: var(--white-color);
+  justify-content: center;
+  align-items: center;
   width: auto;
   height: auto;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
-  justify-content: center;
-  align-items: center;
+  background-color: var(--white-color);
 }
 .footer-content {
   display: block;
@@ -256,14 +258,13 @@
   font-weight: 500;
   font-size: var(--small-font-size);
 }
-
 .footer-nav .footer-item {
-  margin: 20px;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+  position: relative;
   color: var(--text-color);
   line-height: 1.15px;
   text-decoration: none;
@@ -273,25 +274,5 @@
   flex-direction: column;
   width: 115.9px;
   height: 45px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 45px;
-  margin-top: 30px;
-}
-/* columna central */
-.page-wrapper {
-  margin: 0 25px;
-}
-
-/* media queries section EQUIPO  */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .page-wrapper {
-    margin: 0 45px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .page-wrapper {
-    margin: 0 auto;
-    max-width: 1120px;
-  }
+  margin: 30px auto 45px ;
 }
