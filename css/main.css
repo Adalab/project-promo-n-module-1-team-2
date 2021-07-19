@@ -223,17 +223,17 @@
   line-height: 2.05;
   font-weight: 500;
 }
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .team-principal-container {
     display: flex;
     flex-direction: row;
   }
-  .team-container-weaknesses   {
+  .team-container-weaknesses {
     padding-left: 30px;
   }
 }
 @media all and (min-width: 1200px) {
-  .team-container-weaknesses   {
+  .team-container-weaknesses {
     padding-left: 45px;
   }
   .team-strength {
@@ -277,7 +277,7 @@
 .profile-title {
   font-size: 20px;
   padding: 10px;
-  font-family: var(--tittle-font);
+  font-family: var(--body-font);
   text-align: center;
 }
 .text {
@@ -357,11 +357,11 @@
     justify-content: start;
     padding-left: 45px;
     padding-right: 15%;
-    height: 278px; 
+    height: 278px;
   }
   .member-info-even {
     padding-right: 45px;
-    padding-left: 15% ;
+    padding-left: 15%;
   }
   .profile-title {
     padding-bottom: 15px;
@@ -370,14 +370,14 @@
     padding-bottom: 15px;
     text-align: start;
   }
-  .member-text-even{
+  .member-text-even {
     text-align: end;
   }
-  .profile-title-even, .profile-nav-even {
+  .profile-title-even,
+  .profile-nav-even {
     display: flex;
     justify-content: flex-end;
   }
-  
 }
 
 /* Section Footer*/
