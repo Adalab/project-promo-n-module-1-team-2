@@ -45,8 +45,6 @@
 
 /* Section Header */
 
-/*----------------------------------------*/
-
 .fixed-menu {
   position: fixed;
   z-index: 999;
@@ -233,9 +231,6 @@
 }
 
 /*----------------------------------------*/
-
-
-
 /* Section About Us */
 
 .about-us {
@@ -271,7 +266,7 @@
 .profile-title {
   font-size: 20px;
   padding: 10px;
-  font-family: var(--body-font);
+  font-family: var(--tittle-font);
 }
 .text {
   margin: 0;
@@ -296,7 +291,6 @@
 @media all and (min-width: 768px) {
   #who-we-are {
     margin: 45px 0 45px;
-
   }
   .member {
     display: flex;
@@ -329,7 +323,39 @@
     left: 360px;
   }
 }
-
+@media all and (min-width: 1200px) {
+  .profile-title {
+    font-size: 20px;
+    font-family: var(--tittle-font);
+  }
+  .profile-picture {
+    width: 278px;
+  }
+  .member-info {
+    padding-left: 45px;
+    padding-right: 15%;
+    height: 278px; 
+    justify-content: start;
+  }
+  .member-info-even {
+    padding-right: 45px;
+    padding-left: 15% ;
+  }
+  .profile-title {
+    padding-bottom: 15px;
+  }
+  .member-text {
+    padding-bottom: 15px;
+    text-align: start;
+  }
+  .member-text-even, .profile-title-even {
+    text-align: end;
+  }
+  .icons-even {
+    position: relative;
+    left: 500px;
+  }
+}
 
 
 /* Section Footer*/
