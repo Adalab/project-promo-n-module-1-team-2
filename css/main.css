@@ -162,11 +162,7 @@
   .claim {
     bottom: 79px;
     margin-left: 46px;
-<<<<<<< HEAD
     opacity: 80%;
-=======
-    background-color: rgba(255, 255, 255, 0.8);
->>>>>>> 0c158c240e18f075e2e5cc730f9efd1fbd6719c3
   }
 }
 @media all and (min-width: 1200px) {
