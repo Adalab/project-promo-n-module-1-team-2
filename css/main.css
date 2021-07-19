@@ -162,7 +162,11 @@
   .claim {
     bottom: 79px;
     margin-left: 46px;
+<<<<<<< HEAD
     opacity: 80%;
+=======
+    background-color: rgba(255, 255, 255, 0.8);
+>>>>>>> 0c158c240e18f075e2e5cc730f9efd1fbd6719c3
   }
 }
 @media all and (min-width: 1200px) {
@@ -236,17 +240,17 @@
   line-height: 2.05;
   font-weight: 500;
 }
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .team-principal-container {
     display: flex;
     flex-direction: row;
   }
-  .team-container-weaknesses   {
+  .team-container-weaknesses {
     padding-left: 30px;
   }
 }
 @media all and (min-width: 1200px) {
-  .team-container-weaknesses   {
+  .team-container-weaknesses {
     padding-left: 45px;
   }
   .team-strength {
@@ -290,7 +294,8 @@
 .profile-title {
   font-size: 20px;
   padding: 10px;
-  font-family: var(--tittle-font);
+  font-family: var(--body-font);
+  text-align: center;
 }
 .text {
   margin: 0;
@@ -299,6 +304,10 @@
   font-family: var(--body-font);
   color: var(--text-color);
   font-size: var(--normal-font-size);
+}
+.profile-nav {
+  display: flex;
+  justify-content: center;
 }
 .icons {
   display: flex;
@@ -331,6 +340,10 @@
   .profile-title {
     padding: 0;
   }
+  .profile-nav {
+    display: flex;
+    justify-content: start;
+  }
   .member-text {
     text-align: start;
   }
@@ -342,13 +355,15 @@
   .profile-title-even {
     text-align: end;
   }
-  .icons-even {
-    position: relative;
-    left: 360px;
+  .profile-nav-even {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 @media all and (min-width: 1200px) {
   .profile-title {
+    display: flex;
+    justify-content: flex-start;
     font-size: 20px;
     font-family: var(--tittle-font);
   }
@@ -356,14 +371,14 @@
     width: 278px;
   }
   .member-info {
+    justify-content: start;
     padding-left: 45px;
     padding-right: 15%;
-    height: 278px; 
-    justify-content: start;
+    height: 278px;
   }
   .member-info-even {
     padding-right: 45px;
-    padding-left: 15% ;
+    padding-left: 15%;
   }
   .profile-title {
     padding-bottom: 15px;
@@ -372,15 +387,15 @@
     padding-bottom: 15px;
     text-align: start;
   }
-  .member-text-even, .profile-title-even {
+  .member-text-even {
     text-align: end;
   }
-  .icons-even {
-    position: relative;
-    left: 500px;
+  .profile-title-even,
+  .profile-nav-even {
+    display: flex;
+    justify-content: flex-end;
   }
 }
-
 
 /* Section Footer*/
 .footer-container {
