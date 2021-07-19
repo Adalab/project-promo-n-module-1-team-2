@@ -271,7 +271,8 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 30px 28.1px 0 78px;
+  margin: 30px 28.1px 0 102px;
+  margin-bottom: 20px;
 }
 /* columna central */
 .page-wrapper {
