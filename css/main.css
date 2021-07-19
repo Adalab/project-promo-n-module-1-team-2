@@ -441,7 +441,7 @@
   .footer-nav {
     width: 50%;
     text-align: right;
-    justify-content: center;
+    justify-content: left;
   }
 
   .adalab {
