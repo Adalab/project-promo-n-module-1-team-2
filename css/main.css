@@ -114,7 +114,6 @@
 }
 /*Ana Sección Equipo */
 .team-general {
-  background-color: lightyellow;
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -139,7 +138,6 @@
 /* Ana Sección Adalabers */
 
 .about-us {
-  background-color: lightpink;
   display: flex;
   position: relative;
   flex-direction: row;
@@ -237,6 +235,13 @@
   height: auto;
   font-family: var(--body-font);
   font-size: var(--small-font-size);
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 .footer-line {
   border-top: 1px solid var(--text-copy);
@@ -257,21 +262,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: var(--text-color);
   line-height: 1.15px;
   text-decoration: none;
 }
 .adalab {
-  width: 115.9px;
-  height: 45px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin: 30px 28.1px 0 78px;
+  width: 115.9px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  margin-top: 30px;
 }
 /* columna central */
 .page-wrapper {
