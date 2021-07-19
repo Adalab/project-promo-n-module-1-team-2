@@ -196,6 +196,14 @@
 }
 
 /* Css Fortalezas y footer provisionales Tania! */
+.diamond {
+  position: relative;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  top: -15px;
+}
 .team-strength {
   background-color: var(--text-copy);
   opacity: 60%;
