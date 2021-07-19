@@ -15,11 +15,11 @@
 
   /* Tamaños de fuentes */
   --h1-font-size: 16px;
-  --h2-team-strength: 24px; 
+  --h2-team-strength: 24px;
   --h2-about-us: 20px;
   --h3-font-size: 22px;
   --big-font-size: 18px;
-  --normal-font-size: 16px; 
+  --normal-font-size: 16px;
   --small-font-size: 14px;
 }
 
@@ -45,6 +45,8 @@
 
 /* Section Header */
 
+/*----------------------------------------*/
+
 .fixed-menu {
   position: fixed;
   z-index: 999;
@@ -68,7 +70,6 @@
 .header-nav {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 45px;
   opacity: 0.95;
@@ -77,16 +78,57 @@
 }
 .header-ul {
   display: flex;
-  flex-direction: row;
+  width: 320px;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-item {
+  display: block;
+  justify-content: space-between;
   font-size: 15px;
-  padding-right: 13px;
   color: white;
   font-family: var(--title-font);
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media all and (min-width: 768px) {
+  .fixed-menu {
+    height: 60px;
+    display: flex;
+    width: 100vw;
+    background-color: var(--primary-color);
+  }
+  .page-title {
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 45px;
+    height: 60px;
+    width: 50%;
+  }
+
+  .header-nav {
+    position: relative;
+    justify-content: flex-end;
+    padding-right: 45px;
+    height: 60px;
+    width: 50%;
+    background-color: var(--primary-color);
+  }
+  .header-ul {
+    padding-right: 0px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .page-title {
+    padding-left: 140px;
+  }
+  .header-nav {
+    padding-right: 140px;
+  }
+}
+/* Section Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -306,5 +348,5 @@
   flex-direction: column;
   width: 115.9px;
   height: 45px;
-  margin: 30px auto 45px ;
+  margin: 30px auto 45px;
 }
