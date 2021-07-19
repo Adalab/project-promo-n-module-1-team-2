@@ -278,6 +278,7 @@
   font-size: 20px;
   padding: 10px;
   font-family: var(--tittle-font);
+  text-align: center;
 }
 .text {
   margin: 0;
@@ -286,6 +287,10 @@
   font-family: var(--body-font);
   color: var(--text-color);
   font-size: var(--normal-font-size);
+}
+.profile-nav {
+  display: flex;
+  justify-content: center;
 }
 .icons {
   display: flex;
@@ -318,6 +323,10 @@
   .profile-title {
     padding: 0;
   }
+  .profile-nav {
+    display: flex;
+    justify-content: start;
+  }
   .member-text {
     text-align: start;
   }
@@ -329,13 +338,15 @@
   .profile-title-even {
     text-align: end;
   }
-  .icons-even {
-    position: relative;
-    left: 360px;
+  .profile-nav-even {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 @media all and (min-width: 1200px) {
   .profile-title {
+    display: flex;
+    justify-content: flex-start;
     font-size: 20px;
     font-family: var(--tittle-font);
   }
@@ -343,10 +354,10 @@
     width: 278px;
   }
   .member-info {
+    justify-content: start;
     padding-left: 45px;
     padding-right: 15%;
     height: 278px; 
-    justify-content: start;
   }
   .member-info-even {
     padding-right: 45px;
@@ -359,15 +370,15 @@
     padding-bottom: 15px;
     text-align: start;
   }
-  .member-text-even, .profile-title-even {
+  .member-text-even{
     text-align: end;
   }
-  .icons-even {
-    position: relative;
-    left: 500px;
+  .profile-title-even, .profile-nav-even {
+    display: flex;
+    justify-content: flex-end;
   }
+  
 }
-
 
 /* Section Footer*/
 .footer-container {
