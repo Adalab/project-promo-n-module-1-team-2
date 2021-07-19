@@ -1,12 +1,12 @@
 :root {
   /*  Colores  */
-  --primary-color: #099d8d;
+  --primary-color: rgb(9, 157, 141);
   --primary-color-alt: #14d9c4;
   --white-color: #fff;
   --black-color: #000;
   --grey-color: #f1f1f1;
   --text-color: #54585a;
-  --text-copy: #b8b8b9;
+  --text-copy: rgb(184, 184, 185);
 
   /*  Fuentes  */
   --title-font: "Rubik", sans-serif;
@@ -205,8 +205,7 @@
   top: -15px;
 }
 .team-strength {
-  background-color: var(--text-copy);
-  opacity: 60%;
+  background-color: rgba(184, 184, 185, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -218,8 +217,10 @@
   color: var(--primary-color);
   font-size: var(--h3-font-size);
   text-align: center;
+  line-height: 2.05;
   margin-top: 30px;
   margin-bottom: 15px;
+  font-weight: 500;
 }
 .text {
   font-family: var(--body-font);
