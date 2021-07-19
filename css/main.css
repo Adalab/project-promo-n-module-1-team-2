@@ -245,6 +245,10 @@
   color: var(--primary-color);
 }
 @media all and (min-width: 768px) {
+  #who-we-are {
+    margin: 45px 0 45px;
+
+  }
   .member {
     display: flex;
     flex-direction: row;
@@ -277,8 +281,7 @@
   }
 }
 
-/* Section Footer*/
-
+/* section strength*/
 .diamond {
   width: 30px;
   height: 30px;
@@ -305,6 +308,17 @@
   line-height: 2.05;
   font-weight: 500;
 }
+@media all and (min-width:768px) {
+  .team-principal-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .team-container-weaknesses   {
+    padding-left: 30px;
+  }
+}
+
+/* Section Footer*/
 .footer-container {
   justify-content: center;
   align-items: center;
