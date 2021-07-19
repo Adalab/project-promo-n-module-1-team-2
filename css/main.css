@@ -160,7 +160,18 @@
   font-size: var(--big-font-size);
   font-family: var(--body-font);
 }
-
+@media all and (min-width: 768px) {
+  .claim {
+    bottom: 79px;
+    margin-left: 46px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .claim {
+    bottom: 79px;
+    margin-left: 138px;
+  }
+}
 /*----------------------------------------*/
 
 /* Section team */
@@ -254,9 +265,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height:180px ;
+    height: 180px;
     padding-left: 30px;
-
   }
   .profile-title {
     padding: 0;
@@ -268,7 +278,8 @@
     padding-right: 30px;
     order: -1;
   }
-  .member-text-even, .profile-title-even {
+  .member-text-even,
+  .profile-title-even {
     text-align: end;
   }
   .icons-even {
