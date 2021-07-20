@@ -277,7 +277,7 @@
 .profile-title {
   font-size: 20px;
   padding: 10px;
-  font-family: var(--tittle-font);
+  font-family: var(--body-font);
   text-align: center;
 }
 .text {
@@ -322,6 +322,7 @@
   }
   .profile-title {
     padding: 0;
+    text-align: start;
   }
   .profile-nav {
     display: flex;
