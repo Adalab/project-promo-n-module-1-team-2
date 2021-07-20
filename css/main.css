@@ -362,7 +362,7 @@
     display: flex;
     justify-content: flex-start;
     font-size: 20px;
-    font-family: var(-body-font);
+    font-family: var(--body-font);
   }
   .profile-picture {
     width: 278px;
