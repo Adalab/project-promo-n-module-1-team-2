@@ -439,3 +439,25 @@
   height: 45px;
   margin: 30px auto 45px;
 }
+@media all and (min-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .team-name {
+    width: 50%;
+  }
+
+  .footer-nav {
+    width: 50%;
+    text-align: right;
+    justify-content: left;
+  }
+
+  .adalab {
+    display: block;
+    margin: auto;
+  }
+}
