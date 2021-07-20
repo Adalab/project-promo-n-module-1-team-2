@@ -162,6 +162,7 @@
   .claim {
     bottom: 79px;
     margin-left: 46px;
+    opacity: 80%;
   }
 }
 @media all and (min-width: 1200px) {
@@ -182,17 +183,29 @@
   padding-bottom: 30px;
 }
 #team-section {
-  margin-top: 30px;
   font-family: var(--title-font);
   font-size: var(--h2-team-strength);
   font-weight: 500px;
   line-height: 1.88;
   text-align: center;
-  color: var(--primary-color-alt);
+  color: var(--primary-color);
 }
 .text-team {
-  padding-top: 15px;
+  padding-top: 15px; 
 }
+ @media all and (min-width: 768px) {
+  .team-general {
+    bottom: 30px;
+  }
+}
+  @media all and (min-width: 1200px) {
+   .team-general{
+     padding-left: 299px;
+     padding-right: 300px;
+     padding-bottom: 60px;
+     opacity:67%;
+    }  
+}  
 
 /*----------------------------------------*/
 
@@ -223,17 +236,17 @@
   line-height: 2.05;
   font-weight: 500;
 }
-@media all and (min-width:768px) {
+@media all and (min-width: 768px) {
   .team-principal-container {
     display: flex;
     flex-direction: row;
   }
-  .team-container-weaknesses   {
+  .team-container-weaknesses {
     padding-left: 30px;
   }
 }
 @media all and (min-width: 1200px) {
-  .team-container-weaknesses   {
+  .team-container-weaknesses {
     padding-left: 45px;
   }
   .team-strength {
@@ -358,11 +371,11 @@
     justify-content: start;
     padding-left: 45px;
     padding-right: 15%;
-    height: 278px; 
+    height: 278px;
   }
   .member-info-even {
     padding-right: 45px;
-    padding-left: 15% ;
+    padding-left: 15%;
   }
   .profile-title {
     padding-bottom: 15px;
@@ -371,14 +384,14 @@
     padding-bottom: 15px;
     text-align: start;
   }
-  .member-text-even{
+  .member-text-even {
     text-align: end;
   }
-  .profile-title-even, .profile-nav-even {
+  .profile-title-even,
+  .profile-nav-even {
     display: flex;
     justify-content: flex-end;
   }
-  
 }
 
 /* Section Footer*/
@@ -426,4 +439,26 @@
   width: 115.9px;
   height: 45px;
   margin: 30px auto 45px;
+}
+@media all and (min-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .team-name {
+    width: 50%;
+  }
+
+  .footer-nav {
+    width: 50%;
+    text-align: right;
+    justify-content: left;
+  }
+
+  .adalab {
+    display: block;
+    margin: auto;
+  }
 }
