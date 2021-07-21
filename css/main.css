@@ -440,25 +440,31 @@
   height: 45px;
   margin: 30px auto 45px;
 }
+
 @media all and (min-width: 768px) {
   .footer-content {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-  }
-
-  .team-name {
-    width: 50%;
-  }
-
-  .footer-nav {
-    width: 50%;
-    text-align: right;
-    justify-content: left;
-  }
-
-  .adalab {
+    width: 100%;
     display: block;
-    margin: auto;
+    flex-direction: column;
+  }
+  .adalab {
+    height: 25%;
+    margin: 30px;
+    order: -1;
+    float: left;
+    bottom: 0;
+  }
+  .item-1 {
+    top: 0;
+    height: 25%;
+    float: left;
+  }
+  .footer-nav {
+    margin: 0px;
+    width: 75%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
