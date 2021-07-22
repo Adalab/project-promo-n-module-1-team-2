@@ -5,46 +5,37 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@500&display=swap" rel="stylesheet" />
-  <title>Equipo-2</title>
+  <title>The Linkies</title>
 </head>
 
 <body>
 
-  <header class="fixed-menu">
-    <div class="page-title">
-      <h1 class="header-title">Nombre del grupo</h1>
-    </div>
-    <nav class="header-nav">
-      <ul class="header-ul">
-        <li>
-          <a href="./index.html#team-section" class="header-item">Equipo</a>
-        </li>
-        <li>
-          <a href="./index.html#who-we-are" class="header-item">Quiénes somos</a>
-        </li>
-        <li>
-          <a href="./contact.html" class="header-item">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <!-- header -->
+  <include 
+    src="./partials/header.html"
+    headerTitle="The Linkies"
+    menu1="Equipo"
+    menu2="Quienes Somos"
+    menu3="Contacto"
+  >
+  </include>
 
   <main>
-    <section class="hero">
-      <div class="hero-image-container">
-      </div>
-      <div class="claim">
-        <h2 class="header-claim">Frase con el lema Equipo</h2>
-      </div>
-    </section>
+
+    <!-- hero -->
+    <include 
+      src="./partials/hero.html"
+      claim="Another div in the CODE"
+    >
+    </include>
+
+    <!-- --- -->
     <section class="team">
       <div class="team-general">
         <div class="page-wrapper">
