@@ -1,7 +1,17 @@
-body {
-  padding: 2rem;
-  height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+/* central column */
+.page-wrapper {
+  margin: 0 25px;
+}
+
+/* media queries section*/
+@media all and (min-width: 768px) {
+  .page-wrapper {
+    margin: 0 45px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .page-wrapper {
+    margin: 0 auto;
+    max-width: 1120px;
+  }
 }

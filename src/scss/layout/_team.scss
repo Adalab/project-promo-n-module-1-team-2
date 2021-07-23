@@ -1,0 +1,33 @@
+/* Section team */
+
+.team-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  #team-section {
+    font-family: $title-font;
+    font-size: var(--h2-team-strength);
+    font-weight: 500px;
+    line-height: 1.88;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  .text-team {
+    padding-top: 15px;
+  }
+  @media all and (min-width: 768px) {
+    .team-general {
+      bottom: 30px;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    .team-general {
+      padding-left: 299px;
+      padding-right: 300px;
+      padding-bottom: 60px;
+      opacity: 67%;
+    }
+  }

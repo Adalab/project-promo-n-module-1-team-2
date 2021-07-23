@@ -1,0 +1,44 @@
+/* section strength*/
+.diamond {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -15px;
+    background-color: white;
+    transform: rotate(45deg);
+  }
+  .team-strength {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    background-color: rgba(184, 184, 185, 0.2);
+  }
+  .team-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-family: $title-font;
+    color: var(--primary-color);
+    font-size: var(--h3-font-size);
+    text-align: center;
+    line-height: 2.05;
+    font-weight: 500;
+  }
+  @media all and (min-width: 768px) {
+    .team-principal-container {
+      display: flex;
+      flex-direction: row;
+    }
+    .team-container-weaknesses {
+      padding-left: 30px;
+    }
+  }
+  @media all and (min-width: 1200px) {
+    .team-container-weaknesses {
+      padding-left: 45px;
+    }
+    .team-strength {
+      padding-bottom: 60px;
+    }
+  }
