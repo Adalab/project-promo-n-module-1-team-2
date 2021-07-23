@@ -1,90 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Linkies</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@500&display=swap" rel="stylesheet" />
-  <title>The Linkies</title>
-</head>
-
-<body>
-
-  <!-- header -->
-  <include src="./partials/header.html" headerTitle="The Linkies" menu1="Equipo" menu2="Quienes Somos" menu3="Contacto">
-  </include>
-
-  <main>
-
-    <!-- hero -->
-    <include src="./partials/hero.html" claim="Another div in the CODE">
+  <body>
+    <!-- header -->
+    <include
+      src="./partials/header.html"
+      headerTitle="The Linkies"
+      menu1="Equipo"
+      menu2="Quienes Somos"
+      menu3="Contacto"
+    >
     </include>
 
-    <!-- --- -->
-    <section class="team">
-      <div class="team-general">
-        <div class="page-wrapper">
-          <h2 id="team-section">EQUIPO</h2>
-          <p class="text text-team">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta eius sint omnis distinctio quisquam vero,
-            dolor neque beatae sunt debitis qui, voluptatum atque! Quisquam vel voluptas nostrum? Omnis fuga sit earum
-            commodi ipsa iusto temporibus fugit eaque alias voluptas laudantium aperiam obcaecati, ullam hic qui
-            mollitia ea aut, nulla reprehenderit.
-          </p>
-          <p class="text text-team">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta eius sint omnis distinctio quisquam vero,
-            dolor neque beatae sunt debitis qui, voluptatum atque! Quisquam vel voluptas nostrum? Omnis fuga sit earum
-            commodi ipsa iusto temporibus fugit eaque alias voluptas laudantium aperiam obcaecati, ullam hic qui
-            mollitia ea aut, nulla reprehenderit.
-          </p>
-        </div>
-      </div>
-      <div class="team-strength">
-        <div class="diamond"></div>
-        <div class="page-wrapper">
-          <div class="team-principal-container">
-            <div class="team-container ">
-              <h3 class="team-title">Fortalezas</h3>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-                dignissimos blanditiis est dolorum ut at cum dolorem error amet odit,
-                harum delectus voluptates placeat labore! Voluptates amet quis
-                doloribus quia.
-              </p>
-            </div>
-            <div class="team-container team-container-weaknesses">
-              <h3 class="team-title">Debilidades</h3>
-              <p class="text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                necessitatibus debitis nam facere optio veritatis vero, aliquam ex
-                recusandae, inventore consequatur molestiae magnam, quas illo facilis
-                porro ullam totam minima!
-              </p>
-            </div>
-          </div>
-        </div>
-    </section>
+    <main>
+      <!-- hero -->
+      <include src="./partials/hero.html" claim="Another div in the CODE">
+      </include>
 
-    <!-- about us -->
+      <!-- team -->
+      <include src="./partials/team.html"></include>
 
-    <include src="./partials/about-us.html"></include>
-  </main>
+      <!-- strengths & weaknesses-->
+      <include src="./partials/strenghts.html"></include>
 
+      <!-- about us -->
 
-  <!-- footer -->
-  
-    <include src="./partials/footer.html"></include>
-     
+      <include src="./partials/about-us.html"></include>
+    </main>
+
     <!-- footer -->
 
+    <include src="./partials/footer.html"></include>
 
-
-</body>
-
+    <!-- footer -->
+  </body>
 </html>
