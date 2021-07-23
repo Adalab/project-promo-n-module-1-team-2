@@ -1,16 +1,12 @@
 /* central column */
 .page-wrapper {
   margin: 0 25px;
-}
 
-/* media queries section*/
-@media all and (min-width: 768px) {
-  .page-wrapper {
+  @include tablet {
     margin: 0 45px;
   }
-}
-@media all and (min-width: 1200px) {
-  .page-wrapper {
+
+  @include desktop {
     margin: 0 auto;
     max-width: 1120px;
   }

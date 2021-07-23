@@ -1,11 +1,17 @@
 
 /* Section Header */
-
-.fixed-menu {
+.header {
   position: fixed;
   z-index: 999;
+
+  @include tablet {
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: $primary-color;
+  }
 }
-.page-title {
+.header__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,14 +20,18 @@
   opacity: 0.95;
   background-color: $primary-color;
 }
-.header-title {
+.header__container--title {
   font-weight: 500;
   text-transform: uppercase;
   font-size: $h1-font-size;
   font-family: $title-font;
   color: $white-color;
+
+  @include desktop {
+    padding-left: 140px;
+  }
 }
-.header-nav {
+.header__nav {
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -29,40 +39,8 @@
   opacity: 0.95;
   padding: 0;
   background-color: $primary-color-alt;
-}
-.header-ul {
-  display: flex;
-  width: 320px;
-  padding: 0px 15px;
-  justify-content: space-between;
-  align-items: center;
-}
-.header-item {
-  display: block;
-  justify-content: space-between;
-  font-size: 15px;
-  color: white;
-  font-family: $title-font;
-  text-transform: uppercase;
-  text-decoration: none;
-}
 
-@media all and (min-width: 768px) {
-  .fixed-menu {
-    height: 60px;
-    display: flex;
-    width: 100vw;
-    background-color: $primary-color;
-  }
-  .page-title {
-    position: relative;
-    justify-content: flex-start;
-    padding-left: 45px;
-    height: 60px;
-    width: 50%;
-  }
-
-  .header-nav {
+  @include tablet {
     position: relative;
     justify-content: flex-end;
     padding-right: 45px;
@@ -70,15 +48,28 @@
     width: 50%;
     background-color: $primary-color;
   }
-  .header-ul {
+
+  @include desktop {
+    padding-right: 140px;
+  }
+}
+.header__nav--ul {
+  display: flex;
+  width: 320px;
+  padding: 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
     padding-right: 0px;
   }
 }
-@media all and (min-width: 1200px) {
-  .page-title {
-    padding-left: 140px;
-  }
-  .header-nav {
-    padding-right: 140px;
-  }
+.header__nav--item {
+  display: block;
+  justify-content: space-between;
+  font-size: 15px;
+  color: white;
+  font-family: $title-font;
+  text-transform: uppercase;
+  text-decoration: none;
 }
