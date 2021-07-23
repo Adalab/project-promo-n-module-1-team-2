@@ -1,45 +1,48 @@
 /* Section Hero */
 .hero {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -40px;
-  }
-  .hero-picture {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -40px;
+
+  &-picture {
     width: 100vw;
   }
-  .hero-image-container {
+  &-image-container {
     height: 421px;
     background: url(../images/descarga.jpeg) center;
     background-size: cover;
   }
-  .claim {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    max-width: 450px;
-    position: relative;
-    bottom: 40px;
-    background-color: $white-color;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .header-claim {
+}
+.claim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 450px;
+  position: relative;
+  bottom: 40px;
+  background-color: $white-color;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &-claim {
     font-weight: 600px;
     line-height: 1.39;
     font-size: $big-font-size;
     font-family: $body-font;
   }
-  @media all and (min-width: 768px) {
+
+  @include tablet {
     .claim {
       bottom: 79px;
       margin-left: 46px;
       opacity: 80%;
     }
   }
-  @media all and (min-width: 1200px) {
+  @include desktop {
     .claim {
       bottom: 79px;
       margin-left: 138px;
     }
-} 
+  }
+}
