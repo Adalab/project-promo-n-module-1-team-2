@@ -9,11 +9,11 @@
   }
   #team-section {
     font-family: $title-font;
-    font-size: var(--h2-team-strength);
+    font-size: $h2-team-strength;
     font-weight: 500px;
     line-height: 1.88;
     text-align: center;
-    color: var(--primary-color);
+    color: $primary-color;
   }
   .text-team {
     padding-top: 15px;

@@ -19,7 +19,7 @@
   text-transform: uppercase;
   font-size: $h1-font-size;
   font-family: $title-font;
-  color: var(--white-color);
+  color: $white-color;
 }
 .header-nav {
   display: flex;
@@ -28,7 +28,7 @@
   height: 45px;
   opacity: 0.95;
   padding: 0;
-  background-color: var(--primary-color-alt);
+  background-color: $primary-color-alt;
 }
 .header-ul {
   display: flex;
@@ -52,7 +52,7 @@
     height: 60px;
     display: flex;
     width: 100vw;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
   }
   .page-title {
     position: relative;
@@ -68,7 +68,7 @@
     padding-right: 45px;
     height: 60px;
     width: 50%;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
   }
   .header-ul {
     padding-right: 0px;

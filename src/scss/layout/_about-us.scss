@@ -15,7 +15,7 @@
     line-height: 1.88;
     text-align: center;
     font-family: $title-font;
-    color: var(--primary-color);
+    color: $primary-color;
   }
   .member {
     display: flex;
@@ -31,18 +31,18 @@
     border: solid 5px rgba(0, 0, 0, 0.08);
   }
   .profile-title {
-    font-size: 20px;
+    font-size: $h2-about-us;
     padding: 10px;
-    font-family: var(--body-font);
+    font-family: $body-font;
     text-align: center;
   }
   .text {
     margin: 0;
     line-height: 1.5;
     text-align: center;
-    font-family: var(--body-font);
-    color: var(--text-color);
-    font-size: var(--normal-font-size);
+    font-family: $body-font;
+    color: $text-color;
+    font-size: $normal-font-size;
   }
   .profile-nav {
     display: flex;
@@ -58,7 +58,7 @@
   .fab,
   .fas {
     font-size: 16px;
-    color: var(--primary-color);
+    color: $primary-color;
   }
   @media all and (min-width: 768px) {
     #who-we-are {
@@ -104,8 +104,8 @@
     .profile-title {
       display: flex;
       justify-content: flex-start;
-      font-size: 20px;
-      font-family: var(--body-font);
+      font-size: $h2-about-us;
+      font-family: $body-font;
     }
     .profile-picture {
       width: 278px;
