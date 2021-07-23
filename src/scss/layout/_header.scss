@@ -19,6 +19,18 @@
   height: 60px;
   opacity: 0.95;
   background-color: $primary-color;
+
+  @include tablet {
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 45px;
+    height: 60px;
+    width: 50%;
+  }
+
+  @include desktop {
+    padding-left: 140px;
+  }
 }
 .header__container--title {
   font-weight: 500;
@@ -43,14 +55,14 @@
   @include tablet {
     position: relative;
     justify-content: flex-end;
-    padding-right: 45px;
+    padding: 0 45px 0px 0px ;
     height: 60px;
     width: 50%;
     background-color: $primary-color;
   }
 
   @include desktop {
-    padding-right: 140px;
+    padding-left: 0px;
   }
 }
 .header__nav--ul {
@@ -62,6 +74,8 @@
 
   @include tablet {
     padding-right: 0px;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }
 .header__nav--item {
