@@ -19,19 +19,19 @@
     <!-- header -->
     <header class="header">
         <div class="header__container">
-            <h1 class="header__container--title">The Linkies</h1>
+            <a href="index.html" class="header__container--title">The Linkies</a>
         </div>
         <nav class="header__nav">
             <ul class="header__nav--ul">
-            <li>
-                <a href="./index.html#team-section" class="header__nav--item">Equipo</a>
+                <li>
+                    <a href="./index.html#team-section" class="header__nav--item">Equipo</a>
+                </li>
+                <li>
+                    <a href="./index.html#who-we-are" class="header__nav--item"">Quienes Somos</a>
             </li>
             <li>
-                <a href="./index.html#who-we-are" class="header__nav--item"">Quienes Somos</a>
-            </li>
-            <li>
-                <a href="./contact.html" class="header__nav--item">Contacto</a>
-            </li>
+                <a href=" ./contact.html" class="header__nav--item">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -61,21 +61,26 @@
                     </article>
                 </section>
                 <section class="form">
-                    <label class="label label__name" for="name">Nombre completo <span class="asterisk">*</span></label>
-                    <input class="input" type="text" id="name" placeholder="Nombre ..." required />
-
-                    <label class="label label__name" for="email">Email <span class="asterisk">*</span></label>
-                    <input class="input" type="email" id="email" placeholder="Nombre ..." value="nombre.apellidos@mail.com"
-                        required />
-
-                    <label class="label label__name" for="tel">Teléfono</label>
-                    <input class="input" type="tel" id="tel" placeholder="Ej: 123456789" />
-
-                    <label class="label label__name" for="message">Mensaje <span class="asterisk">*</span></label>
-                    <input class="input textarea" type="textarea" id="message" placeholder="¿Qué necesitas?">
-
-                    <input class="form__button" type="submit" value="Enviar" />
-
+                    <div class="form__item">
+                        <label class="label label__name" for="name">Nombre completo <span class="asterisk">*</span></label>
+                        <input class="input" type="text" id="name" placeholder="Nombre ..." required />
+                    </div>
+                    <div class="form__item">
+                        <label class="label label__name" for="email">Email <span class="asterisk">*</span></label>
+                        <input class="input" type="email" id="email" placeholder="Email ..." value="nombre.apellidos@mail.com"
+                            required />
+                    </div>
+                    <div class="form__item">
+                        <label class="label label__name" for="tel">Teléfono</label>
+                        <input class="input" type="tel" id="tel" placeholder="Ej: 123456789" />
+                    </div>
+                    <div class="form__item">
+                        <label class="label label__name" for="message">Mensaje <span class="asterisk">*</span></label>
+                        <input class="input textarea" type="textarea" id="message" placeholder="¿Qué necesitas?">
+                    </div>
+                    <div class="form__item">
+                        <input class="form__button" type="submit" value="Enviar" />
+                    </div>
                 </section>
             </div>
         </section>
