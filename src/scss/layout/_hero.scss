@@ -54,4 +54,7 @@
   height: 300px;
   background: url(../images/768x300-fondo.png) center;
   background-size: cover;
+  @include desktop {
+    height: 400px;
+  }
 }
