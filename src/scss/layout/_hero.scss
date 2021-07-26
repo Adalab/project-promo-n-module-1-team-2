@@ -11,6 +11,9 @@
     height: 421px;
     background: url(../images/768x421-fondo.png) center;
     background-size: cover;
+    @include desktop {
+      height: 550px;
+    }
   }
 }
 .claim {
