@@ -4,51 +4,121 @@
   flex-direction: column;
   margin-bottom: -40px;
 
-  &-picture {
+  &__picture {
     width: 100vw;
   }
-  &-image-container {
+  &__image--container {
+    width: 100%;
     height: 421px;
-    background: url(../images/descarga.jpeg) center;
+    background: url(../images/768x421-fondo.png);
+    background-repeat: no-repeat;
+    background-size: 768px 421px;
+    background-position: center;
+    @include tablet {
+      background: url(../images/1200x421-fondo.png) center;
+      background-size: 1200px 421px;
+    }
+    @include desktop {
+      height: 550px;
+      background: url(../images/1600x550-fondo.png) center;
+      background-size: 1600px 550px;
+    }
+  }
+  &__image--front1 {
+    width: 100%;
+    height: 421px;
+    background: url(../images/off-computer.png);
+    background-repeat: no-repeat;
+    background-position: right -5px bottom 30px;
+    background-size: 200px 200px;
+    &:hover {
+      background: url(../images/on-computer.png);
+      background-repeat: no-repeat;
+      background-position: right -5px bottom 30px;
+      background-size: 200px 200px;
+      @media all and (min-width: 500px) {
+        background-position: right -5px bottom 10px;
+        background-size: 350px 350px;
+      }
+      @media all and (min-width: 768px) {
+        background-position: right -10px bottom -10px;
+        background-size: 430px 430px;
+      }
+
+    }
+    @media all and (min-width: 500px) {
+      background-position: right -5px bottom 10px;
+      background-size: 350px 350px;
+    }
+    @media all and (min-width: 768px) {
+      background-position: right -10px bottom -10px;
+      background-size: 430px 430px;
+    }
+  }
+
+  &__image--front2 {
+    width: 100%;
+    height: 421px;
+    background: url(../images/left-image.png);
+    background-repeat: no-repeat;
+    background-position: left top 10px;
+    background-size: 320px 421px;
+    @media all and (min-width: 768px) {
+      background-position: left top;
+      background-size: 368px 484px;
+    }
+    @media all and (min-width: 768px) {
+      background-position: left top -50px;
+      background-size: 416px 547px;
+    }
+  }
+
+  .claim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 450px;
+    position: relative;
+    bottom: 40px;
+    background-color: $white-color;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    &__header {
+      font-weight: 600px;
+      line-height: 1.39;
+      font-size: $big-font-size;
+      font-family: $body-font;
+    }
+
+    @include tablet {
+      .claim {
+        bottom: 79px;
+        margin-left: 46px;
+        opacity: 80%;
+      }
+    }
+    @include desktop {
+      .claim {
+        bottom: 79px;
+        margin-left: 138px;
+      }
+    }
+  }
+  // Contact  -  Sección hero */
+  .contact__image--container {
+    height: 300px;
+    background: url(../images/768x300-fondo.png) center;
     background-size: cover;
-  }
-}
-.claim {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  max-width: 450px;
-  position: relative;
-  bottom: 40px;
-  background-color: $white-color;
-  margin-left: 15px;
-  margin-right: 15px;
-
-  &-header {
-    font-weight: 600px;
-    line-height: 1.39;
-    font-size: $big-font-size;
-    font-family: $body-font;
-  }
-
-  @include tablet {
-    .claim {
-      bottom: 79px;
-      margin-left: 46px;
-      opacity: 80%;
+    @include tablet {
+      background: url(../images/1200x300-fondo.png) center;
+      background-size: 1200px 300px;
+    }
+    @include desktop {
+      height: 400px;
+      background: url(../images/1600x400-fondo.png) center;
+      background-size: 1600px 400px;
     }
   }
-  @include desktop {
-    .claim {
-      bottom: 79px;
-      margin-left: 138px;
-    }
-  }
-}
-// Contact  -  Sección hero */
-.contact-image-container {
-  height: 300px;
-  background: url(../images/descarga.jpeg) center;
-  background-size: cover;
 }

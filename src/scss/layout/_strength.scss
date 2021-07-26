@@ -14,7 +14,7 @@
   align-items: center;
   padding-bottom: 45px;
   background-color: rgba(184, 184, 185, 0.2);
-  &-title {
+  &--title {
     margin-top: 30px;
     margin-bottom: 15px;
     font-family: $title-font;
@@ -26,11 +26,11 @@
   }
 }
 @include tablet {
-  .team__strenght-main {
+  .team__strenght--main {
     display: flex;
     flex-direction: row;
   }
-  .team__strenght-weaknesses {
+  .team__strenght--weaknesses {
     padding-left: 30px;
   }
 }
