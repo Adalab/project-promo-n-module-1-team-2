@@ -11,8 +11,14 @@
     height: 421px;
     background: url(../images/768x421-fondo.png) center;
     background-size: cover;
+    @include tablet {
+    background: url(../images/1200x421-fondo.png) center;
+    background-size: 1200px 421px;
+    }
     @include desktop {
       height: 550px;
+      background: url(../images/1600x550-fondo.png) center;
+      background-size: 1600px 550px;
     }
   }
 }
@@ -54,7 +60,13 @@
   height: 300px;
   background: url(../images/768x300-fondo.png) center;
   background-size: cover;
+  @include tablet {
+    background: url(../images/1200x300-fondo.png) center;
+    background-size: 1200px 300px;
+  }
   @include desktop {
     height: 400px;
+    background: url(../images/1600x400-fondo.png) center;
+      background-size: 1600px 400px;
   }
 }
