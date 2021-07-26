@@ -5,22 +5,24 @@
     margin-top: 40px;
     padding-top: 30px;
   }
-  .contact__title {
-    font-family: $title-font;
-    font-size: $h2-team-strength;
-    font-weight: 500px;
-    line-height: 45px;
-    text-align: center;
-    color: $primary-color;
-    text-transform: uppercase;
-  }
-  .contact__article {
-    height: 144px;
-    margin-bottom: 58px;
-  }
-  .contact__small {
-    font-size: 12px;
-    padding-top: 20px;
+  .contact{
+    &__title{
+      font-family: $title-font;
+      font-size: $h2-team-strength;
+      font-weight: 500px;
+      line-height: 45px;
+      text-align: center;
+      color: $primary-color;
+      text-transform: uppercase;
+    }
+    &__article{
+      height: 144px;
+      margin-bottom: 58px;
+    }
+    &__small{
+      font-size: 12px;
+      padding-top: 20px;
+    }
   }
   .asterisk {
     color: $primary-color-alt;
@@ -29,6 +31,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__button{
+      margin-top: 17px;
+      margin-bottom: 60px;
+      width: 290px;
+      height: 45px;
+      text-transform: uppercase;
+      background-color: $primary-color;
+      border: none;
+      color: white;
+    }
   }
   .label {
     display: block;
@@ -55,13 +67,4 @@
     width: 290px;
     height: 105px;
   }
-  .form__button {
-    margin-top: 17px;
-    margin-bottom: 60px;
-    width: 290px;
-    height: 45px;
-    text-transform: uppercase;
-    background-color: $primary-color;
-    border: none;
-    color: white;
-  }
+ 
