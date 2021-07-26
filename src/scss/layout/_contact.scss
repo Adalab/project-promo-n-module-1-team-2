@@ -40,6 +40,13 @@
       background-color: $primary-color;
       border: none;
       color: white;
+
+      @include desktop {
+        .form__container--mail {
+          display: flex;
+          flex-direction: row;
+        }
+      }
     }
   }
   .label {
@@ -48,7 +55,14 @@
     color: $text-color;
     font-size: 14px;
     margin-bottom: 7px;
-  }
+
+    &__tel {
+      @include desktop {
+        margin-left: 44px;
+      }
+    }
+
+    }
   .input {
     display: block;
     box-sizing: border-box;
@@ -59,6 +73,22 @@
     font-size: 14px;
     margin-bottom: 13px;
     padding: 11px 15px;
+    &__name {
+      @include desktop {
+          width: 601px;
+        }
+      }
+    &__email {
+      @include desktop {
+        width: 395px;
+      }
+    }
+    &__tel {
+      @include desktop {
+        margin-left: 44px;
+        width: 162px;
+      }
+    }
   }
   ::placeholder {
     color: $text-copy;
@@ -66,5 +96,30 @@
   .textarea {
     width: 290px;
     height: 105px;
+
+    @include desktop {
+      width: 601px;
+      height: 105px;
+    }
+
+
   }
- 
+  .form__button {
+    margin-top: 17px;
+    margin-bottom: 60px;
+    width: 290px;
+    height: 45px;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    border: none;
+    color: white;
+  }
+  
+
+
+  @include desktop {
+    .form__container--mail {
+      display: flex;
+      flex-direction: row;
+    }
+  }

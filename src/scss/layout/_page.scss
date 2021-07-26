@@ -18,3 +18,10 @@ body{
     max-width: 1120px;
   }
 }
+
+.page-wrapper-contact {
+  @include desktop {
+    margin: 0 300px;
+    max-width: 1120px;
+  }
+}
