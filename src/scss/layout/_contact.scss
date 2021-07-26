@@ -18,12 +18,17 @@
     &__article{
       height: 144px;
       margin-bottom: 58px;
+      @include tablet {
+          padding: 15px 104px 60px 163px;
+          text-align: center;
+      }
     }
     &__small{
       font-size: 12px;
       padding-top: 20px;
     }
   }
+  
   .asterisk {
     color: $primary-color-alt;
   }
@@ -40,13 +45,6 @@
       background-color: $primary-color;
       border: none;
       color: white;
-
-      @include desktop {
-        .form__container--mail {
-          display: flex;
-          flex-direction: row;
-        }
-      }
     }
   }
   .label {
@@ -101,8 +99,6 @@
       width: 601px;
       height: 105px;
     }
-
-
   }
   .form__button {
     margin-top: 17px;
