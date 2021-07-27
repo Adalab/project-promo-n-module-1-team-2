@@ -10,18 +10,12 @@
   &__image--container {
     width: 100%;
     height: 421px;
-    background: url(../images/768x421-fondo.png);
+    background: url(../images/1600x550-fondo.png);
     background-repeat: no-repeat;
-    background-size: 768px 421px;
+    background-size: 1600px 550px;
     background-position: center;
-    @include tablet {
-      background: url(../images/1200x421-fondo.png) center;
-      background-size: 1200px 421px;
-    }
     @include desktop {
       height: 550px;
-      background: url(../images/1600x550-fondo.png) center;
-      background-size: 1600px 550px;
     }
   }
   &__image--front1 {
@@ -44,7 +38,6 @@
         background-position: right -10px bottom -10px;
         background-size: 430px 430px;
       }
-
     }
     @media all and (min-width: 500px) {
       background-position: right -5px bottom 10px;
@@ -85,37 +78,31 @@
     margin-left: 15px;
     margin-right: 15px;
     @include tablet {
-        bottom: 79px;
-        margin-left: 46px;
-        opacity: 80%;
-      }
+      bottom: 79px;
+      margin-left: 46px;
+      opacity: 80%;
+    }
     @include desktop {
-          bottom: 79px;
-          margin-left: 138px;     
-        }
+      bottom: 79px;
+      margin-left: 138px;
+    }
     &__header {
       font-weight: 500px;
       line-height: 1.39;
       font-size: 18px;
       font-family: $title-font;
-      color: black; 
+      color: black;
       opacity: 100%;
     }
-    }
   }
-  // Contact  -  Sección hero */
-  .contact__image--container {
-    height: 300px;
-    background: url(../images/768x300-fondo.png) center;
-    background-size: cover;
-    @include tablet {
-      background: url(../images/1200x300-fondo.png) center;
-      background-size: 1200px 300px;
-    }
-    @include desktop {
-      height: 400px;
-      background: url(../images/1600x400-fondo.png) center;
-      background-size: 1600px 400px;
-    }
-  }
+}
 
+// Contact  -  Sección hero */
+.contact__image--container {
+  height: 300px;
+  background: url(../images/1600x550-fondo.png) center;
+  background-size: 1600px 550px;
+  @include desktop {
+    height: 400px;
+  }
+}
