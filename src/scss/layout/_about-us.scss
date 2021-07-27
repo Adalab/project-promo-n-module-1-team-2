@@ -48,10 +48,14 @@
     }
 
   &__picture{
+    filter: grayscale(100%);
     width: 180px;
     margin-bottom: 15px;
     border-radius: 4px;
     border: solid 5px rgba(0, 0, 0, 0.08);
+    &:hover{
+      filter: grayscale(0%);
+    }
     @include tablet{
       width: 205px;
     }
