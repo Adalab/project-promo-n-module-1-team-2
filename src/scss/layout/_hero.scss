@@ -86,10 +86,14 @@
     margin-right: 15px;
 
     &__header {
-      font-weight: 600px;
+      font-weight: 500px;
       line-height: 1.39;
-      font-size: $big-font-size;
-      font-family: $body-font;
+      font-size: 26px;
+      font-family: $title-font;
+      color: $primary-color-alt;
+      -webkit-text-stroke: 1px black;
+      
+      
     }
 
     @include tablet {
