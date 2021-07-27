@@ -20,6 +20,11 @@ body{
 }
 
 .page-wrapper-contact {
+  margin: 0 15px;
+  
+  @include tablet {
+    margin: 0 45px;
+  }
   @include desktop {
     margin: 0 300px;
     max-width: 1120px;

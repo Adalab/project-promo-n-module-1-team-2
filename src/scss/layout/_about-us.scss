@@ -1,182 +1,208 @@
 .about-us {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display        : flex;
+  position       : relative;
+  flex-direction : row;
+  flex-wrap      : wrap;
   justify-content: center;
-  align-items: center;
+  align-items    : center;
 }
+
 #who-we-are {
-  margin: 30px 0 30px;
-  font-size: 24px;
+  margin     : 30px 0 30px;
+  font-size  : 24px;
   font-weight: 500px;
   line-height: 1.88;
-  text-align: center;
+  text-align : center;
   font-family: $title-font;
-  color: $primary-color;
-  @include tablet{
+  color      : $primary-color;
+
+  @include tablet {
     #who-we-are {
       margin: 45px 0 45px;
     }
   }
 }
+
 .fab,
 .fas {
   font-size: 16px;
-  color: $primary-color;
+  color    : $primary-color;
 }
-.text{
-  margin: 0;
-  line-height: 1.5;
-  text-align: center;
-  font-family: $body-font;
-  color: $text-color;
-  font-size: $normal-font-size;
-}
-.member {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 45px;
-  @include tablet{
-      display: flex;
-      flex-direction: row;
-      padding-bottom: 60px;
-    }
-  @include desktop{
-    }
 
-  &__picture{
-    width: 180px;
+.text {
+  margin     : 0;
+  line-height: 1.5;
+  text-align : center;
+  font-family: $body-font;
+  color      : $text-color;
+  font-size  : $normal-font-size;
+}
+
+.member {
+  display        : flex;
+  align-items    : center;
+  flex-direction : column;
+  justify-content: center;
+  padding-bottom : 45px;
+
+  @include tablet {
+    display       : flex;
+    flex-direction: row;
+    padding-bottom: 60px;
+    align-items   : flex-start;
+  }
+
+  @include desktop {}
+
+  &__picture {
+    filter       : grayscale(100%);
+    width        : 180px;
     margin-bottom: 15px;
     border-radius: 4px;
-    border: solid 5px rgba(0, 0, 0, 0.08);
-    @include tablet{
+    border       : solid 5px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+
+    @include tablet {
       width: 205px;
     }
-    @include desktop{
+
+    @include desktop {
       width: 278px;
     }
   }
-  &__info{
-    @include tablet{
-      display: flex;
-      flex-direction: column;
+
+  &__info {
+    @include tablet {
+      display        : flex;
+      flex-direction : column;
       justify-content: space-between;
-      height: 180px;
-      padding-left: 30px;
+      height         : 180px;
+      padding-left   : 30px;
     }
-    @include desktop{
+
+    @include desktop {
       justify-content: start;
-      padding-left: 45px;
-      padding-right: 15%;
-      height: 278px;
+      padding-left   : 45px;
+      padding-right  : 15%;
+      height         : 278px;
     }
   }
 
-    &--even{
-      @include tablet{
-        padding-right: 30px;
-        order: -1;
-      }
+  &--even {
+    @include tablet {
+      padding-right: 30px;
+      order        : -1;
     }
+  }
 
-  &__title{
-    font-size: $h2-about-us;
-    padding: 10px;
+  &__title {
+    font-size  : $h2-about-us;
+    padding    : 10px;
     font-family: $body-font;
-    text-align: center;
-    @include tablet{
-      padding: 0;
+    text-align : center;
+
+    @include tablet {
+      padding   : 0;
       text-align: start;
     }
-    @include desktop{
-      display: flex;
+
+    @include desktop {
+      display        : flex;
       justify-content: flex-start;
-      font-size: $h2-about-us;
-      font-family: $body-font;
-      padding-bottom: 15px;
+      font-size      : $h2-about-us;
+      font-family    : $body-font;
+      padding-bottom : 15px;
     }
   }
 
-  &__text{
-    margin: 0;
+  &__text {
+    margin     : 0;
     line-height: 1.5;
-    text-align: center;
+    text-align : center;
     font-family: $body-font;
-    color: $text-color;
-    font-size: $normal-font-size;
-    @include tablet{
+    color      : $text-color;
+    font-size  : $normal-font-size;
+
+    @include tablet {
       text-align: start;
+      font-size: 15px;
     }
-    @include desktop{
+
+    @include desktop {
       // width: 439px;
       // height: 125px;
       padding-bottom: 15px;
-      text-align: start;
+      text-align    : start;
       // margin: 45px 0 15px 0 ;
     }
   }
 
-  &__nav{
-    display: flex;
+  &__nav {
+    display        : flex;
     justify-content: center;
-    @include tablet{
-      display: flex;
+
+    @include tablet {
+      display        : flex;
       justify-content: start;
     }
-  
-    &--icons{
-      display: flex;
+
+    &--icons {
+      display        : flex;
       justify-content: center;
-      align-items: center;
-      width: 124px;
-      height: 30px;
+      align-items    : center;
+      width          : 124px;
+      height         : 30px;
     }
   }
 }
 
-.even{
-    &__info{
-      @include tablet{
-        padding-right: 30px;
-        order: -1;
-      } 
-      @include desktop{
-        padding-right: 45px;
-        padding-left: 15%;
-      }
+.even {
+  &__info {
+    @include tablet {
+      padding-right: 30px;
+      order        : -1;
     }
 
-    &__title{
-      @include tablet{
-        text-align: end;
-      }
-      @include desktop{
-        display: flex;
-        justify-content: flex-end;
-      } 
-    }
-
-    &__text{
-      @include tablet{
-        text-align: end;
-      }
-      @include desktop{
-        text-align: end;
-        // margin: 45px 0 15px 0 ;
-      }  
-    }
-    &__nav{
-      @include tablet{
-        display: flex;
-        justify-content: flex-end;
-      }
-      @include desktop{
-        display: flex;
-        justify-content: flex-end;
-      }
+    @include desktop {
+      padding-right: 45px;
+      padding-left : 15%;
     }
   }
 
+  &__title {
+    @include tablet {
+      text-align: end;
+    }
+
+    @include desktop {
+      display        : flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__text {
+    @include tablet {
+      text-align: end;
+    }
+
+    @include desktop {
+      text-align: end;
+      // margin: 45px 0 15px 0 ;
+    }
+  }
+
+  &__nav {
+    @include tablet {
+      display        : flex;
+      justify-content: flex-end;
+    }
+
+    @include desktop {
+      display        : flex;
+      justify-content: flex-end;
+    }
+  }
+}
