@@ -1,8 +1,18 @@
+.hero-contact {
+    padding-top: 60px ;
+}
 .hero-contact__img {
-    background: url(../images/hero-image-contact-sm.jpg);
-    width: 100vw;
     height: 300px;
-    object-fit: cover;
+    background: url(../images/hero-contact.svg);
+    background-color: #f5e9ad;
+    background-size: 300px 300px;
     background-repeat: no-repeat;
     background-position: center;
+    @include tablet {
+        background-size: 768px 300px;
+    }
+    @include desktop {
+    height: 400px;
+    background-size: 1440px 400px;
+    }
 }
