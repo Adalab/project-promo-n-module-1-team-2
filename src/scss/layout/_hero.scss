@@ -96,18 +96,11 @@
     &__header {
       font-weight: 500px;
       line-height: 1.39;
-      font-size: 24px;
+      font-size: 18px;
       font-family: $title-font;
       color: black; 
       opacity: 100%;
     }
-
-  
-    @include desktop {
-      .claim {
-        bottom: 79px;
-        margin-left: 138px;
-      }
     }
   }
   // Contact  -  Sección hero */
@@ -125,4 +118,4 @@
       background-size: 1600px 400px;
     }
   }
-}
+
