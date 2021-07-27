@@ -129,8 +129,8 @@
 // Contact  -  Sección hero */
 .contact__image--container {
   height: 300px;
-  background: url(../images/1600x550-fondo.png) center;
-  background-size: 1600px 550px;
+  background: url(../images/fondo-contact.png) center;
+  background-size: 1600px 400px;
   @include desktop {
     height: 400px;
   }
