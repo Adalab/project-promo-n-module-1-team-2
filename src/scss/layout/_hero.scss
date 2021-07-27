@@ -30,7 +30,7 @@
       background-repeat: no-repeat;
       background-position: right -5px bottom 30px;
       background-size: 200px 200px;
-    
+
       @include tablet {
         background-position: right -10px bottom 20px;
         background-size: 350px 350px;
@@ -59,6 +59,26 @@
     background-repeat: no-repeat;
     background-position: left top 10px;
     background-size: 320px 421px;
+    &:hover {
+      background: url(../images/left1-hover.png);
+      background-repeat: no-repeat;
+      background-position: left top 10px;
+      background-size: 320px 421px;
+
+      @include tablet {
+        background: url(../images/left2-hover.png);
+        background-repeat: no-repeat;
+        background-position: left top -60px;
+        background-size: 448px 590px;
+      }
+      @include desktop {
+        height: 640px;
+        background: url(../images/left2-hover.png);
+        background-repeat: no-repeat;
+        background-position: left top -110px;
+        background-size: 640px 842px;
+      }
+    }
     @include tablet {
       background: url(../images/left2.png);
       background-repeat: no-repeat;
@@ -66,11 +86,10 @@
       background-size: 448px 590px;
     }
     @include desktop {
-      height: 640px; 
+      height: 640px;
       background-position: left top -110px;
       background-size: 640px 842px;
     }
-
   }
 
   .claim {
@@ -101,9 +120,8 @@
       color: black;
       opacity: 100%;
       @include desktop {
-      font-size: 24px;
+        font-size: 24px;
       }
-
     }
   }
 }
