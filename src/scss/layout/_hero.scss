@@ -30,40 +30,47 @@
       background-repeat: no-repeat;
       background-position: right -5px bottom 30px;
       background-size: 200px 200px;
-      @media all and (min-width: 500px) {
-        background-position: right -5px bottom 10px;
+    
+      @include tablet {
+        background-position: right -10px bottom 20px;
         background-size: 350px 350px;
       }
-      @media all and (min-width: 768px) {
-        background-position: right -10px bottom -10px;
-        background-size: 430px 430px;
+      @include desktop {
+        height: 600px;
+        background-position: right 0px bottom 40px;
+        background-size: 500px 500px;
       }
     }
-    @media all and (min-width: 500px) {
-      background-position: right -5px bottom 10px;
+    @include tablet {
+      background-position: right -10px bottom 20px;
       background-size: 350px 350px;
     }
-    @media all and (min-width: 768px) {
-      background-position: right -10px bottom -10px;
-      background-size: 430px 430px;
+    @include desktop {
+      height: 600px;
+      background-position: right 0px bottom 40px;
+      background-size: 500px 500px;
     }
   }
 
   &__image--front2 {
     width: 100%;
     height: 421px;
-    background: url(../images/left-image.png);
+    background: url(../images/left1.png);
     background-repeat: no-repeat;
     background-position: left top 10px;
     background-size: 320px 421px;
-    @media all and (min-width: 768px) {
-      background-position: left top;
-      background-size: 368px 484px;
+    @include tablet {
+      background: url(../images/left2.png);
+      background-repeat: no-repeat;
+      background-position: left top -60px;
+      background-size: 448px 590px;
     }
-    @media all and (min-width: 768px) {
-      background-position: left top -50px;
-      background-size: 416px 547px;
+    @include desktop {
+      height: 640px; 
+      background-position: left top -110px;
+      background-size: 640px 842px;
     }
+
   }
 
   .claim {
