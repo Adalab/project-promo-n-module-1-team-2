@@ -41,7 +41,7 @@
     font-family: $body-font;
     font-size: $small-font-size;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   &__image {
     display: flex;
@@ -81,7 +81,7 @@
   @include desktop {
     .footer__container {
       display: grid;
-      min-width: 768px;
+      // min-width: 768px;
       height: 170px;
       grid-template-columns: 180px 35% 30% 35% 138px;
       grid-template-rows: 24px 45px 45px 47px;
