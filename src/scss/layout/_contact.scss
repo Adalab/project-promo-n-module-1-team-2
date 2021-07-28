@@ -99,6 +99,11 @@
   .textarea {
     width: 290px;
     height: 105px;
+    @include tablet {
+      width: 442px;
+      height: 105px;
+    }
+
 
     @include desktop {
       width: 601px;
