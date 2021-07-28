@@ -28,5 +28,8 @@ body{
   @include desktop {
     margin: 0 300px;
     max-width: 1120px;
-  }
+  }  
+    @include tablet {
+      margin: 0 163px;
+    }
 }

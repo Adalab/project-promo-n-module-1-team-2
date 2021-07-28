@@ -12,59 +12,61 @@
           <span class="asterisk">*</span> son obligatorios
         </p>
       </article>
-    </div>
-  </section>
-  <div class="page-wrapper-contact">
-    <form action="https://formspree.io/f/moqykqya" method="post" class="form">
-      <div class="form__item">
-        <label class="label label__name" for="name"
-          >Nombre completo <span class="asterisk">*</span></label
-        >
-        <input
-          class="input input__name"
-          type="text"
-          id="name"
-          placeholder="Nombre ..."
-          required
-        />
-      </div>
-      <div class="form__container--mail">
+      <form action="https://formspree.io/f/moqykqya" method="post" class="form">
         <div class="form__item">
-          <label class="label label__name" for="email"
-            >Email <span class="asterisk">*</span></label
+          <label class="label label__name" for="name"
+            >Nombre completo <span class="asterisk">*</span></label
           >
           <input
-            class="input input__email"
-            type="email"
-            id="email"
-            placeholder="Email ..."
+            class="input input__name"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nombre ..."
             required
           />
         </div>
+        <div class="form__container--mail">
+          <div class="form__item">
+            <label class="label label__name" for="email"
+              >Email <span class="asterisk">*</span></label
+            >
+            <input
+              class="input input__email"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email ..."
+              required
+            />
+          </div>
+          <div class="form__item">
+            <label class="label label__tel" for="tel">Teléfono</label>
+            <input
+              class="input input__tel"
+              type="tel"
+              id="tel"
+              name="tel"
+              placeholder="Ej: 123456789"
+            />
+          </div>
+        </div>
         <div class="form__item">
-          <label class="label label__tel" for="tel">Teléfono</label>
+          <label class="label label__name" for="message"
+            >Mensaje <span class="asterisk">*</span></label
+          >
           <input
-            class="input input__tel"
-            type="tel"
-            id="tel"
-            placeholder="Ej: 123456789"
+            class="input textarea"
+            type="textarea"
+            id="message"
+            name="textarea"
+            placeholder="¿Qué necesitas?"
           />
         </div>
-      </div>
-      <div class="form__item">
-        <label class="label label__name" for="message"
-          >Mensaje <span class="asterisk">*</span></label
-        >
-        <input
-          class="input textarea"
-          type="textarea"
-          id="message"
-          placeholder="¿Qué necesitas?"
-        />
-      </div>
-      <div class="form__item form__item--button">
-        <input class="form__button" type="submit" value="Enviar" />
-      </div>
-    </form>
-  </div>
+        <div class="form__item form__item--button">
+          <input class="form__button" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </section>
 </section>
