@@ -37,6 +37,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__item--button{
+      @include tablet {
+        align-self: flex-end;
+      }
+    }
+
     &__button{
       margin-top: 17px;
       margin-bottom: 60px;
@@ -47,6 +53,12 @@
       background-color: $primary-color;
       border: none;
       color: white;
+      @include tablet {
+        width: 206px;
+      }
+      @include desktop {
+        width: 278px;
+      }
     }
   }
   .label {
@@ -103,8 +115,6 @@
       width: 442px;
       height: 105px;
     }
-
-
     @include desktop {
       width: 601px;
       height: 105px;

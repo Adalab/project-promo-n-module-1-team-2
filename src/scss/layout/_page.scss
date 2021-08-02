@@ -21,6 +21,10 @@ body{
 
 .page-wrapper-contact {
   margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
   @include tablet {
     margin: 0 45px;
