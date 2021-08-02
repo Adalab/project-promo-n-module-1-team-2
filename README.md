@@ -2,6 +2,27 @@
 
 Este proyecto está creado sobre el Starter Kit de Adalab. Es el ejercicio del módulo HTML y CSS. Se trata de ejecutar la maquetación de una página web sobre un proyecto diseñado en Zeplin, aplicando diseño responsive y creando la adaptación para móvil, tablet y desktop.
 
+Para realizar este proyecto nos han entregado un diseño a traves del programa Zeplin, nos han dado pautas semanales en los cuales hemos avanzado en cada spring (con las actividades programadas con anterioridad) entregando el 95% de los entregables cada semana y cumpliendo con todas las tareas. 
+
+## ¿Qué encontrarás? 
+
+Esta es una página web en la cual nos damos a conocer como desarrolladoras web de Adalab, destacando nuestra habilitades y demostrando con conocimientos que tenemos en maquetación web, diseño, animaciones y el código.
+
+La página web consta de una landing page con: 
+- Menu 
+- Hero (animado)
+- Equipo
+- Fortalezas y debilidades
+- Nosotras 
+- y Footer
+- Ademas... Una página de contacto, para que trabajemos junt@s 
+
+#### Donde se puede ver 
+Esta página web tiene un enlace en la web, donde se podra visitar las veces que quiera.
+
+**El enlace es el siguiente: [The Linkies](URL "http://beta.adalab.es/project-promo-n-module-1-team-2/")**
+
+
 ### Cómo trabajar con este proyecto
 
 > **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/)
@@ -46,6 +67,10 @@ src
     ├── pages
     └── main.scss
 ```
+
+- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
+- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, SASS, en esta carpeta se codeo todos los nuevos ficheros.
+- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
 
 ### Tecnologías y recursos utilizados para el proyecto:
 
