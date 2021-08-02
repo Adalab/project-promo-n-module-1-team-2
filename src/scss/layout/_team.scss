@@ -27,3 +27,15 @@
     }
   }
 }
+.team {
+  position: relative;
+}
+
+#team {
+  position: absolute;
+  top: -105px;
+   @include tablet {
+     top: -60px;
+   }
+}
+
