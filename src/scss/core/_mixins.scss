@@ -10,3 +10,15 @@
         @content
     }
 }; 
+
+@mixin break1 {
+    @media all and (min-width:440px) {
+        @content
+    }
+}; 
+
+@mixin break2 {
+    @media all and (min-width:620px) {
+        @content
+    }
+}; 

@@ -4,9 +4,6 @@
   flex-direction: column;
   margin-bottom: -40px;
 
-  &__picture {
-    width: 100vw;
-  }
   &__image--container {
     width: 100%;
     height: 421px;
@@ -23,17 +20,26 @@
     height: 421px;
     background: url(../images/off-computer.png);
     background-repeat: no-repeat;
-    background-position: right -5px bottom 30px;
-    background-size: 200px 200px;
+    background-position: right -15px bottom 30px;
+    background-size: 225px 225px;
     &:hover {
       background: url(../images/on-computer.png);
       background-repeat: no-repeat;
-      background-position: right -5px bottom 30px;
-      background-size: 200px 200px;
+      background-position: right -15px bottom 30px;
+      background-size: 225px 225px;
+
+      @include break1 {
+        background-position: right -10px bottom 25px;
+        background-size: 275px 275px;
+      }
+      @include break2 {
+        background-position: right -15px bottom 20px;
+        background-size: 340px 340px;
+      }
 
       @include tablet {
-        background-position: right -10px bottom 20px;
-        background-size: 350px 350px;
+        background-position: right -10px bottom -10px;
+        background-size: 420px 420px;
       }
       @include desktop {
         height: 600px;
@@ -41,9 +47,18 @@
         background-size: 500px 500px;
       }
     }
+    @include break1 {
+      background-position: right -10px bottom 25px;
+      background-size: 275px 275px;
+    }
+    @include break2 {
+      background-position: right -15px bottom 20px;
+      background-size: 340px 340px;
+    
+    }
     @include tablet {
-      background-position: right -10px bottom 20px;
-      background-size: 350px 350px;
+      background-position: right -10px bottom -10px;
+      background-size: 420px 420px;
     }
     @include desktop {
       height: 600px;
@@ -64,10 +79,20 @@
       background-repeat: no-repeat;
       background-position: left top 10px;
       background-size: 320px 421px;
-
-      @include tablet {
+      
+      @include break1 {
         background: url(../images/left2-hover.png);
         background-repeat: no-repeat;
+        background-position: left top 10px;
+        background-size: 320px 421px;
+      }
+
+      @include break2 {
+        background-position: left top 0px;
+        background-size: 384px 505px;
+      }
+
+      @include tablet {
         background-position: left top -60px;
         background-size: 448px 590px;
       }
@@ -79,6 +104,18 @@
         background-size: 640px 842px;
       }
     }
+    @include break1 {
+      background: url(../images/left2.png);
+      background-repeat: no-repeat;
+      background-position: left top 10px;
+      background-size: 320px 421px;
+    }
+
+    @include break2 {
+      background-position: left top 0px;
+      background-size: 384px 505px;
+    }
+
     @include tablet {
       background: url(../images/left2.png);
       background-repeat: no-repeat;
