@@ -25,22 +25,24 @@
 
 .fab,
 .fas {
-  font-size: 16px;
-  color    : $primary-color;
-  animation-name: spin;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-    @keyframes spin {
-      from {
-          transform: rotate(0deg);
-          
-          }
-      to {
-          transform: rotate(360deg);
-          
-            }
-         }
+  font-size                : 16px;
+  color                    : $primary-color;
+  animation-name           : spin;
+  animation-duration       : 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+
+    }
+
+    to {
+      transform: rotate(360deg);
+
+    }
+  }
 }
 
 .text {
@@ -66,7 +68,7 @@
     align-items   : flex-start;
   }
 
-  
+
 
   &__picture {
     filter       : grayscale(100%);
@@ -142,15 +144,12 @@
 
     @include tablet {
       text-align: start;
-      font-size: 15px;
+      font-size : 15px;
     }
 
     @include desktop {
-      // width: 439px;
-      // height: 125px;
       padding-bottom: 15px;
       text-align    : start;
-      // margin: 45px 0 15px 0 ;
     }
   }
 
@@ -204,7 +203,6 @@
 
     @include desktop {
       text-align: end;
-      // margin: 45px 0 15px 0 ;
     }
   }
 
@@ -220,14 +218,16 @@
     }
   }
 }
+
 .disabled {
-  cursor: not-allowed;
+  cursor        : not-allowed;
   pointer-events: none;
 }
 
 #who-we-are {
- position: absolute;
- top: -105px;
+  position: absolute;
+  top     : -105px;
+
   @include tablet {
     top: -60px;
   }

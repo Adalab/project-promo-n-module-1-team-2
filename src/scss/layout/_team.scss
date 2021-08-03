@@ -1,41 +1,46 @@
 /* Section team */
 
 .team {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
+  align-items    : center;
+  padding-bottom : 30px;
+
   &__section {
     font-family: $title-font;
-    font-size: $h2-team-strength;
+    font-size  : $h2-team-strength;
     font-weight: 500px;
     line-height: 1.88;
-    text-align: center;
-    color: $primary-color;
+    text-align : center;
+    color      : $primary-color;
+
     &--text {
       padding-top: 15px;
     }
+
     @include tablet {
       bottom: 30px;
     }
+
     @include desktop {
-      padding-left: 299px;
-      padding-right: 300px;
+      padding-left  : 299px;
+      padding-right : 300px;
       padding-bottom: 15px;
-      opacity: 67%;
+      opacity       : 67%;
     }
   }
 }
+
 .team {
   position: relative;
 }
 
 #team {
   position: absolute;
-  top: -105px;
-   @include tablet {
-     top: -60px;
-   }
-}
+  top     : -105px;
 
+  @include tablet {
+    top: -60px;
+  }
+}

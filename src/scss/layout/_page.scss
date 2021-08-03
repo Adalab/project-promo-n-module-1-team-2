@@ -1,8 +1,8 @@
 /* central column */
-body{
-  max-width: 1600px;
-  min-width: 300px;
-  margin-left: auto;
+body {
+  max-width   : 1600px;
+  min-width   : 300px;
+  margin-left : auto;
   margin-right: auto;
 }
 
@@ -14,26 +14,28 @@ body{
   }
 
   @include desktop {
-    margin: 0 auto;
+    margin   : 0 auto;
     max-width: 1120px;
   }
 }
 
 .page-wrapper-contact {
-  margin: 0 15px;
-  display: flex;
-  flex-direction: column;
+  margin         : 0 15px;
+  display        : flex;
+  flex-direction : column;
   justify-content: center;
-  align-items: center;
-  
+  align-items    : center;
+
   @include tablet {
     margin: 0 45px;
   }
+
   @include desktop {
-    margin: 0 300px;
+    margin   : 0 300px;
     max-width: 1120px;
-  }  
-    @include tablet {
-      margin: 0 163px;
-    }
+  }
+
+  @include tablet {
+    margin: 0 163px;
+  }
 }

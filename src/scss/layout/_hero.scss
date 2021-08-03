@@ -1,161 +1,178 @@
 /* Section Hero */
 .hero {
-  display: flex;
+  display       : flex;
   flex-direction: column;
-  margin-bottom: -40px;
+  margin-bottom : -40px;
 
   &__image--container {
-    width: 100%;
-    height: 421px;
-    background: url(../images/1600x550-fondo.png);
-    background-repeat: no-repeat;
-    background-size: 1600px 550px;
+    width              : 100%;
+    height             : 421px;
+    background         : url(../images/1600x550-fondo.png);
+    background-repeat  : no-repeat;
+    background-size    : 1600px 550px;
     background-position: center;
+
     @include desktop {
       height: 550px;
     }
   }
+
   &__image--front1 {
-    width: 100%;
-    height: 421px;
-    background: url(../images/off-computer.png);
-    background-repeat: no-repeat;
+    width              : 100%;
+    height             : 421px;
+    background         : url(../images/off-computer.png);
+    background-repeat  : no-repeat;
     background-position: right -15px bottom 30px;
-    background-size: 225px 225px;
+    background-size    : 225px 225px;
+
     &:hover {
-      background: url(../images/on-computer.png);
-      background-repeat: no-repeat;
+      background         : url(../images/on-computer.png);
+      background-repeat  : no-repeat;
       background-position: right -15px bottom 30px;
-      background-size: 225px 225px;
+      background-size    : 225px 225px;
 
       @include break1 {
         background-position: right -10px bottom 25px;
-        background-size: 275px 275px;
+        background-size    : 275px 275px;
       }
+
       @include break2 {
         background-position: right -15px bottom 20px;
-        background-size: 340px 340px;
+        background-size    : 340px 340px;
       }
 
       @include tablet {
         background-position: right -10px bottom -10px;
-        background-size: 420px 420px;
+        background-size    : 420px 420px;
       }
+
       @include desktop {
-        height: 600px;
+        height             : 600px;
         background-position: right 0px bottom 40px;
-        background-size: 500px 500px;
+        background-size    : 500px 500px;
       }
     }
+
     @include break1 {
       background-position: right -10px bottom 25px;
-      background-size: 275px 275px;
+      background-size    : 275px 275px;
     }
+
     @include break2 {
       background-position: right -15px bottom 20px;
-      background-size: 340px 340px;
-    
+      background-size    : 340px 340px;
+
     }
+
     @include tablet {
       background-position: right -10px bottom -10px;
-      background-size: 420px 420px;
+      background-size    : 420px 420px;
     }
+
     @include desktop {
-      height: 600px;
+      height             : 600px;
       background-position: right 0px bottom 40px;
-      background-size: 500px 500px;
+      background-size    : 500px 500px;
     }
   }
 
   &__image--front2 {
-    width: 100%;
-    height: 421px;
-    background: url(../images/left1.png);
-    background-repeat: no-repeat;
+    width              : 100%;
+    height             : 421px;
+    background         : url(../images/left1.png);
+    background-repeat  : no-repeat;
     background-position: left top 10px;
-    background-size: 320px 421px;
+    background-size    : 320px 421px;
+
     &:hover {
-      background: url(../images/left1-hover.png);
-      background-repeat: no-repeat;
+      background         : url(../images/left1-hover.png);
+      background-repeat  : no-repeat;
       background-position: left top 10px;
-      background-size: 320px 421px;
-      
+      background-size    : 320px 421px;
+
       @include break1 {
-        background: url(../images/left2-hover.png);
-        background-repeat: no-repeat;
+        background         : url(../images/left2-hover.png);
+        background-repeat  : no-repeat;
         background-position: left top 10px;
-        background-size: 320px 421px;
+        background-size    : 320px 421px;
       }
 
       @include break2 {
         background-position: left top 0px;
-        background-size: 384px 505px;
+        background-size    : 384px 505px;
       }
 
       @include tablet {
         background-position: left top -60px;
-        background-size: 448px 590px;
+        background-size    : 448px 590px;
       }
+
       @include desktop {
-        height: 640px;
-        background: url(../images/left2-hover.png);
-        background-repeat: no-repeat;
+        height             : 640px;
+        background         : url(../images/left2-hover.png);
+        background-repeat  : no-repeat;
         background-position: left top -110px;
-        background-size: 640px 842px;
+        background-size    : 640px 842px;
       }
     }
+
     @include break1 {
-      background: url(../images/left2.png);
-      background-repeat: no-repeat;
+      background         : url(../images/left2.png);
+      background-repeat  : no-repeat;
       background-position: left top 10px;
-      background-size: 320px 421px;
+      background-size    : 320px 421px;
     }
 
     @include break2 {
       background-position: left top 0px;
-      background-size: 384px 505px;
+      background-size    : 384px 505px;
     }
 
     @include tablet {
-      background: url(../images/left2.png);
-      background-repeat: no-repeat;
+      background         : url(../images/left2.png);
+      background-repeat  : no-repeat;
       background-position: left top -60px;
-      background-size: 448px 590px;
+      background-size    : 448px 590px;
     }
+
     @include desktop {
-      height: 640px;
+      height             : 640px;
       background-position: left top -110px;
-      background-size: 640px 842px;
+      background-size    : 640px 842px;
     }
   }
 
   .claim {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    max-width: 450px;
-    position: relative;
-    bottom: 40px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    height          : 80px;
+    max-width       : 450px;
+    position        : relative;
+    bottom          : 40px;
     background-color: $white-color;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left     : 15px;
+    margin-right    : 15px;
+
     @include tablet {
-      bottom: 79px;
+      bottom     : 79px;
       margin-left: 46px;
-      opacity: 80%;
+      opacity    : 80%;
     }
+
     @include desktop {
-      bottom: 79px;
+      bottom     : 79px;
       margin-left: 138px;
     }
+
     &__header {
       font-weight: 500px;
       line-height: 1.39;
-      font-size: 18px;
+      font-size  : 18px;
       font-family: $title-font;
-      color: black;
-      opacity: 100%;
+      color      : black;
+      opacity    : 100%;
+
       @include desktop {
         font-size: 24px;
       }
@@ -165,9 +182,10 @@
 
 // Contact  -  Sección hero */
 .contact__image--container {
-  height: 300px;
-  background: url(../images/fondo-contact.png) center;
+  height         : 300px;
+  background     : url(../images/fondo-contact.png) center;
   background-size: 1600px 400px;
+
   @include desktop {
     height: 400px;
   }

@@ -1,139 +1,157 @@
 /* Section contact*/
 
 .section--contact {
-    box-sizing: border-box;
-    margin-top: 40px;
-    padding-top: 30px;
-    padding: 0;
+  box-sizing : border-box;
+  margin-top : 40px;
+  padding-top: 30px;
+  padding    : 0;
+}
+
+.contact {
+  &__title {
+    font-family   : $title-font;
+    font-size     : $h2-team-strength;
+    font-weight   : 500px;
+    line-height   : 45px;
+    text-align    : center;
+    color         : $primary-color;
+    text-transform: uppercase;
   }
-  .contact{
-    &__title{
-      font-family: $title-font;
-      font-size: $h2-team-strength;
-      font-weight: 500px;
-      line-height: 45px;
+
+  &__article {
+    height       : 144px;
+    margin-bottom: 58px;
+
+    @include tablet {
+      padding   : 15px 104px 60px 104x;
       text-align: center;
-      color: $primary-color;
-      text-transform: uppercase;
-    }
-    &__article{
-      height: 144px;
-      margin-bottom: 58px;
-      @include tablet {
-          padding: 15px 104px 60px 104x;
-          text-align: center;
-      }
-    }
-    &__small{
-      font-size: 12px;
-      padding-top: 20px;
     }
   }
-  
-  .asterisk {
-    color: $primary-color-alt;
+
+  &__small {
+    font-size  : 12px;
+    padding-top: 20px;
   }
-  .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__item--button{
-      @include tablet {
-        align-self: flex-end;
-      }
-    }
+}
 
-    &__button{
-      margin-top: 17px;
-      margin-bottom: 60px;
-      border-radius: 4px;
-      width: 290px;
-      height: 45px;
-      text-transform: uppercase;
-      background-color: $primary-color;
-      border: none;
-      color: white;
-      transition: all 1s linear;
-      
-      &:hover {
-        background-color: white;
-        color: $primary-color;
-        border: 2px solid ;
-      }
+.asterisk {
+  color: $primary-color-alt;
+}
 
-      @include tablet {
-        width: 206px;
-      }
-      @include desktop {
-        width: 278px;
-      }
-    }
-  }
-  .label {
-    display: block;
-    font-family: $body-font;
-    color: $text-color;
-    font-size: 14px;
-    margin-bottom: 7px;
+.form {
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
 
-    &__tel {
-      @include desktop {
-        margin-left: 44px;
-      }
-    }
-
-    }
-  .input {
-    display: block;
-    box-sizing: border-box;
-    height: 45px;
-    width: 290px;
-    font-family: $body-font;
-    color: $text-color;
-    font-size: 14px;
-    margin-bottom: 13px;
-    padding: 11px 15px;
+  &__item--button {
     @include tablet {
-      width: 442px;
-    }
-    &__name {
-      @include desktop {
-          width: 601px;
-        }
-      }
-    &__email {
-      @include desktop {
-        width: 395px;
-      }
-    }
-    &__tel {
-      @include desktop {
-        margin-left: 44px;
-        width: 162px;
-      }
+      align-self: flex-end;
     }
   }
-  ::placeholder {
-    color: $text-copy;
-  }
-  .textarea {
-    width: 290px;
-    height: 105px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+
+  &__button {
+    margin-top      : 17px;
+    margin-bottom   : 60px;
+    border-radius   : 4px;
+    width           : 290px;
+    height          : 45px;
+    text-transform  : uppercase;
+    background-color: $primary-color;
+    border          : none;
+    color           : white;
+    transition      : all 1s linear;
+
+    &:hover {
+      background-color: white;
+      color           : $primary-color;
+      border          : 2px solid;
+    }
+
     @include tablet {
-      width: 442px;
-      height: 105px;
+      width: 206px;
     }
+
+    @include desktop {
+      width: 278px;
+    }
+  }
+}
+
+.label {
+  display      : block;
+  font-family  : $body-font;
+  color        : $text-color;
+  font-size    : 14px;
+  margin-bottom: 7px;
+
+  &__tel {
+    @include desktop {
+      margin-left: 44px;
+    }
+  }
+
+}
+
+.input {
+  display      : block;
+  box-sizing   : border-box;
+  height       : 45px;
+  width        : 290px;
+  font-family  : $body-font;
+  color        : $text-color;
+  font-size    : 14px;
+  margin-bottom: 13px;
+  padding      : 11px 15px;
+
+  @include tablet {
+    width: 442px;
+  }
+
+  &__name {
     @include desktop {
       width: 601px;
-      height: 105px;
     }
   }
+
+  &__email {
+    @include desktop {
+      width: 395px;
+    }
+  }
+
+  &__tel {
+    @include desktop {
+      margin-left: 44px;
+      width      : 162px;
+    }
+  }
+}
+
+::placeholder {
+  color: $text-copy;
+}
+
+.textarea {
+  width          : 290px;
+  height         : 105px;
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-start;
+
+  @include tablet {
+    width : 442px;
+    height: 105px;
+  }
+
   @include desktop {
-    .form__container--mail {
-      display: flex;
-      flex-direction: row;
-    }
+    width : 601px;
+    height: 105px;
   }
+}
+
+@include desktop {
+  .form__container--mail {
+    display       : flex;
+    flex-direction: row;
+  }
+}
