@@ -1,27 +1,28 @@
 # Módulo 1 - Maquetación (proyecto grupal)
 
-Este proyecto está creado sobre el Starter Kit de Adalab. Es el ejercicio del módulo HTML y CSS. Se trata de ejecutar la maquetación de una página web sobre un proyecto diseñado en Zeplin, aplicando diseño responsive y creando la adaptación para móvil, tablet y desktop.
+Este proyecto está creado sobre el Starter Kit de Adalab. Es el ejercicio del módulo HTML y CSS. Se trata de ejecutar la maquetación de una página web, aplicando diseño responsive y creando la adaptación para móvil, tablet y desktop.
 
-Para realizar este proyecto nos han entregado un diseño a traves del programa Zeplin, nos han dado pautas semanales en los cuales hemos avanzado en cada sprint review (con las actividades programadas con anterioridad) entregando el 95% de los entregables cada semana y cumpliendo con todas las tareas. 
+Para realizar este proyecto nos han entregado un diseño a traves del programa Zeplin, nos han dado pautas semanales en los cuales hemos avanzado en cada sprint review (con las actividades programadas con anterioridad) entregando el 95% de los entregables cada semana y cumpliendo con todas las tareas.
 
-## ¿Qué encontraras? 
+## ¿Qué encontrarás?
 
-Esta es una página web en la cual nos damos a conocer como desarrolladoras web de Adalab, destacando nuestra habilitades y demostrando con conocimientos que tenemos en maquetación web, diseño, animaciones y el código.
+Esta es una página web en la cual nos damos a conocer como desarrolladoras web de Adalab, destacando nuestra habilidades y demostrando los conocimientos que tenemos en maquetación web, diseño, animaciones y el código.
 
-La página web consta de una landing page con: 
+La página web consta de una landing page con:
+
 - Menú
 - Hero (animado)
 - Equipo
 - Fortalezas y debilidades
-- Nosotras 
+- Nosotras
 - y Footer
-- Además... Una página de contacto, para que trabajemos junt@s 
+- Además... Una página de contacto, para que trabajemos junt@s
 
-#### Dónde se puede ver 
+#### Dónde se puede ver
+
 Esta página web tiene un enlace en la web, donde se podrá visitar las veces que quiera.
 
 **El enlace es el siguiente: [The Linkies](URL "http://beta.adalab.es/project-promo-n-module-1-team-2/")**
-
 
 ### Cómo trabajar con este proyecto
 
@@ -81,7 +82,7 @@ src
   4. BEM
   5. Mixins y mediamixins
   6. CSS grid
-  7. Transiciones
+  7. Transiciones y animaciones
 - Node.js
 - Markdown
 - Gulp
