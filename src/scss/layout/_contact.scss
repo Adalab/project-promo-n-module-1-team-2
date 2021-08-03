@@ -111,6 +111,10 @@
   .textarea {
     width: 290px;
     height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
     @include tablet {
       width: 442px;
       height: 105px;
