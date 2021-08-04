@@ -22,7 +22,7 @@ La página web consta de una landing page con:
 
 Esta página web tiene un enlace en la web, donde se podrá visitar las veces que quiera.
 
-**El enlace es el siguiente: [The Linkies]("http://beta.adalab.es/project-promo-n-module-1-team-2/")**
+**El enlace es el siguiente: [The Linkies](http://beta.adalab.es/project-promo-n-module-1-team-2/)**
 
 ### Cómo trabajar con este proyecto
 
